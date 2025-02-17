@@ -125,7 +125,7 @@ if (isRegistered === null) {
     return (
       <ProtectedRoute>
       <div className="flex items-center justify-center h-screen">
-        <p className="text-lg font-semibold">You have registered for TEDxSIST 2025.</p>
+        <p className="text-lg font-semibold">You have registered for TEDxSIST 2025. Check your inbox and spams</p>
       </div>
       </ProtectedRoute>
     );
@@ -183,7 +183,7 @@ if (isRegistered === null) {
 
             <div className="flex flex-col md:flex-row gap-4">
               <LabelInputContainer>
-                <Label htmlFor="degree">Degree</Label>
+                <Label htmlFor="degree">Degree and Year of Study</Label>
                 <Input 
                   id="degree" 
                   name="degree" 

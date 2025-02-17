@@ -124,9 +124,12 @@ if (isRegistered === null) {
   if (isRegistered) {
     return (
       <ProtectedRoute>
-      <div className="flex items-center justify-center h-screen">
-        <p className="text-lg font-semibold">You have registered for TEDxSIST 2025. Check your inbox and spams</p>
-      </div>
+      <div className="flex items-center justify-center min-h-screen px-4">
+  <p className="text-md sm:text-xl md:text-xl font-semibold text-center">
+    You have registered for <span className="text-primary">TEDx</span>SIST 2025. Check your inbox and spams.
+  </p>
+</div>
+
       </ProtectedRoute>
     );
   }

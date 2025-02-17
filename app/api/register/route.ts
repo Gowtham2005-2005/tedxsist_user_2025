@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
 }
 
 async function sendConfirmationEmail(to: string, username: string) {
-  const emailUser = process.env.EMAIL_USER || "tech.tedxsist@gmail.com";
+  const emailUser = process.env.EMAIL_USER;
   const emailPass = process.env.EMAIL_PASS;
 
   if (!emailUser || !emailPass) {

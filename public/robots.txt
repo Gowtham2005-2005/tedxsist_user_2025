@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tedxsist.com
+
+# Sitemaps
+Sitemap: https://tedxsist.com/sitemap.xml

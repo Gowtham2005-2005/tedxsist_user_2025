@@ -190,7 +190,7 @@ if (isRegistered === null) {
                 <Input 
                   id="degree" 
                   name="degree" 
-                  placeholder="B.E" 
+                  placeholder="B.E and 3rd year" 
                   type="text" 
                   required 
                   maxLength={20}

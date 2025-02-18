@@ -37,7 +37,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       id: 2,
       quote: "Vice President and Co-Licensee of TEDxSIST 2025, Thaarni embraces challenges with her motto, &quot;Do it scared!&quot; Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
-      designation: "Vice President and Licensee",
+      designation: "Vice President",
       src: "/sample.png",
     },
     {
@@ -45,13 +45,6 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Mukesh, TEDxSIST 2025’s Cluster Coordinator, blends creativity with leadership. He expertly navigates communication across diverse teams, ensuring smooth coordination and an event that challenges boundaries, inspiring innovation and immersive storytelling.",
       name: "Mukesh.D.R",
       designation: "Cluster Coordinator",
-      src: "/sample.png",
-    },
-    {
-      id: 3,
-      quote: "Vice President and Co-Licensee of TEDxSIST 2025, Thaarni embraces challenges with her motto, 'Do it scared!' Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
-      name: "Thaarani.S",
-      designation: "Vice President and Co-Licensee",
       src: "/sample.png",
     },
   ],

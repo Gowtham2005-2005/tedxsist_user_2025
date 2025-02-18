@@ -35,7 +35,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
     },
     {
       id: 2,
-      quote: "Vice President of TEDxSIST 2025, Thaarni embraces challenges with her motto, &quot;Do it scared!&quot; Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
+      quote: "Vice President of TEDxSIST 2025, Thaarni embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
       designation: "Vice President",
       src: "/sample.png",

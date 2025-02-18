@@ -28,14 +28,14 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
   "Organisers": [
     {
       id: 1,
-      quote: "Organizer Murali Sairam fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
+      quote: "Organizer Murali Sai Ram fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
       name: "M. Murali Sai Ram",
-      designation: "Licensee and Organiser",
+      designation: "Licensee",
       src: "/sample.png",
     },
     {
       id: 2,
-      quote: "Vice President of TEDxSIST 2025, Thaarni embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
+      quote: "Co-Organiser of TEDxSIST 2025, Thaarani embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
       designation: "Co-Organiser",
       src: "/sample.png",

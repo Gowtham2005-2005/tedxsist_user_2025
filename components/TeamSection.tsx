@@ -30,14 +30,14 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       id: 1,
       quote: "Organizer Murali Sairam fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
       name: "M. Murali Sai Ram",
-      designation: "President and Licensee",
+      designation: "Licensee and Organiser",
       src: "/sample.png",
     },
     {
       id: 2,
       quote: "Vice President of TEDxSIST 2025, Thaarni embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
-      designation: "Vice President",
+      designation: "Co-Organiser",
       src: "/sample.png",
     },
     {

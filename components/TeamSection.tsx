@@ -29,9 +29,9 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
   "Organisers": [
     {
       id: 1,
-      quote: "Organizer Murali Sai Ram fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
+      quote: "He fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
       name: "M. Murali Sai Ram",
-      designation: "Licensee",
+      designation: "Licensee and Organiser",
       src: "/sample.png",
     },
     {
@@ -171,7 +171,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
   "Production Team": [
     {
       id: 20,
-      quote: "Dhyani Stark, TEDxSIST 2025’s Production Lead, is a visionary force ensuring seamless execution. Known for his adaptability and sharp creative eye, he meticulously oversees every detail, blending ideation with precision to bring the event’s visual storytelling to life.",
+      quote: "Dhyaneshwar, TEDxSIST 2025’s Production Lead, is a visionary force ensuring seamless execution. Known for his adaptability and sharp creative eye, he meticulously oversees every detail, blending ideation with precision to bring the event’s visual storytelling to life.",
       name: "Dhyaneshwar MD",
       designation: "Production Lead",
       src: "/sample.png",

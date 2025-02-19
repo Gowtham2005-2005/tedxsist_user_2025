@@ -28,13 +28,13 @@ const testimonials2023: Testimonial[] = [
     quote: "Divya Abhishek is the youngest Chairperson of the Southern India Regional Council of The Institute of Cost Accountants of India and the youngest woman Independent Director/Trustee on the boards of listed companies.",
     name: "Divya Abhishek",
     designation: "Independent Director & Financial Expert",
-    src: "/divya.png",
+    src: "/divyaabhishek.png",
   },
   {
     quote: "Kavitha Ramu, an accomplished IAS officer and CEO of the Chennai Metropolitan Development Authority, is driven by a passion for public service.",
     name: "Kavitha Ramu",
     designation: "IAS Officer & CEO, Chennai Metropolitan Development Authority",
-    src: "/kavitha.png",
+    src: "/kavitharamu.png",
   },
   {
     quote: "Neerja Malik, a dedicated social worker and teacher with over 20 years of experience, is a true survivor and conqueror of cancer.",
@@ -46,7 +46,7 @@ const testimonials2023: Testimonial[] = [
     quote: "Mr. Sawan Kapoor launched his career in 2001 and quickly ascended the corporate ranks, becoming the CEO of Sutton & Maxwell, a part of The Palm Bay International Group—the largest wine and spirits import company in the U.S.—within just eight years.",
     name: "Sawan Kapoor",
     designation: "CEO, Sutton & Maxwell",
-    src: "/sawan.png",
+    src: "/sawankapoor.png",
   },
 ]
 

@@ -18,8 +18,16 @@ export default function AboutPage() {
         className="container mx-auto px-8 md:px-16"
       >
         <div className="relative w-full h-[60vh] mb-20">
-          <Image src="/sample.png" alt="About TEDx" layout="fill" objectFit="cover" className="rounded-[2rem]" />
-        </div>
+  <Image 
+    src="/about.jpg" 
+    alt="About TEDx" 
+    layout="fill" 
+    objectFit="cover" 
+    className="rounded-[2rem]" 
+    style={{ objectPosition: "50% 75%" }} // Crops the top part
+  />
+</div>
+
         <AboutTED />
 <div className="hidden lg:block">
   <HowTEDxWorks />

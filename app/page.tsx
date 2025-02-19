@@ -97,7 +97,7 @@ export default function HomePage() {
         }
       >
         <Image
-          src="/linear.webp"
+          src="/about.jpg"
           alt="hero"
           height={720}
           width={1400}

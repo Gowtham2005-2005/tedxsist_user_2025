@@ -77,13 +77,26 @@ export const Header = ({
 export const Card = ({
   rotate,
   scale,
-  
+
 }: {
   rotate: MotionValue<number>;
   scale: MotionValue<number>;
   translate: MotionValue<number>;
   children: React.ReactNode;
 }) => {
+  const [isLargeScreen, setIsLargeScreen] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024); // lg breakpoint
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
     <motion.div
       style={{
@@ -92,11 +105,14 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-2 border-[#6C6C6C] p-2 md:p-1 bg-[#222222] rounded-[30px] shadow-2xl"
     >
-      <div className="relative h-full w-full overflow-x-auto overflow-y-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:rounded-2xl md:p-4 scrollbar-hide">
+      <div className="relative h-full w-full overflow-x-auto overflow-y-hidden rounded-2xl md:rounded-2xl md:p-4 scrollbar-hide">
         <div className="h-full">
-          <div className="relative h-full" style={{ width: '200%' }}>  {/* Adjust width based on your image size */}
+          <div 
+            className="relative h-full" 
+            style={{ width: isLargeScreen ? '100%' : '200%' }}
+          >
             <Image
               src="/aboutheader.jpg"
               alt="hero"
@@ -105,8 +121,8 @@ export const Card = ({
               draggable={false}
               priority
               style={{ 
-                objectFit: 'cover', 
-                objectPosition: 'left top',
+                objectFit: 'cover',
+                objectPosition: isLargeScreen ? 'center' : 'left top',
               }}
             />
           </div>

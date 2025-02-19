@@ -52,7 +52,7 @@ export function InfiniteMovingCardsDemo() {
       <div className="text-center space-y-4">
         <motion.h1
          whileInView="visible"
-          className="text-4xl font-bold text-foreground"
+          className="text-4xl font-bold text-foreground text-center break-words"
           variants={titleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}

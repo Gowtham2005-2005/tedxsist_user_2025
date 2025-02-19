@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
+import Image from "next/image";
 
 export const ContainerScroll = ({
   titleComponent,
@@ -36,7 +37,7 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="h-[60rem] md:h-[60rem]  flex items-center justify-center relative "
+      className="h-[60rem] md:h-[60rem] flex items-center justify-center relative"
       ref={containerRef}
     >
       <div
@@ -76,7 +77,7 @@ export const Header = ({
 export const Card = ({
   rotate,
   scale,
-  children,
+  
 }: {
   rotate: MotionValue<number>;
   scale: MotionValue<number>;
@@ -93,8 +94,23 @@ export const Card = ({
       }}
       className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
     >
-      <div className=" h-full w-full  overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:rounded-2xl md:p-4 ">
-        {children}
+      <div className="relative h-full w-full overflow-x-auto overflow-y-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 md:rounded-2xl md:p-4 scrollbar-hide">
+        <div className="h-full">
+          <div className="relative h-full" style={{ width: '200%' }}>  {/* Adjust width based on your image size */}
+            <Image
+              src="/aboutheader.jpg"
+              alt="hero"
+              fill
+              className="rounded-2xl"
+              draggable={false}
+              priority
+              style={{ 
+                objectFit: 'cover', 
+                objectPosition: 'left top',
+              }}
+            />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

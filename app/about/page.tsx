@@ -17,16 +17,25 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className="container mx-auto px-8 md:px-16"
       >
-        <div className="relative w-full h-[60vh] mb-20">
+        <div className="relative w-full lg:h-[60vh] lg:mb-20">
+  <Image 
+    src="/about.jpg" 
+    alt="About TEDx" 
+    height={1600}
+    width={1200} 
+    className="rounded-[1rem] object-cover lg:hidden"
+    style={{ objectPosition: "50% 75%" }} // Crops the top part
+  />
+  
   <Image 
     src="/about.jpg" 
     alt="About TEDx" 
     layout="fill" 
-    objectFit="cover" 
-    className="rounded-[2rem]" 
+    className="rounded-[2rem] object-cover hidden lg:block"
     style={{ objectPosition: "50% 75%" }} // Crops the top part
   />
 </div>
+
 
         <AboutTED />
 <div className="hidden lg:block">

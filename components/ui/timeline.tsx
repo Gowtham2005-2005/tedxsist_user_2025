@@ -18,6 +18,12 @@ const TimelineEntry = ({
     alt: string;
   }[];
 }) => {
+  const [imageError, setImageError] = useState<{[key: string]: boolean}>({});
+
+  const handleImageError = (src: string) => {
+    setImageError(prev => ({...prev, [src]: true}));
+    console.error(`Failed to load image: ${src}`);
+  };
   return (
     <div className="flex justify-start pt-10 md:pt-40 md:gap-10">
       <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
@@ -81,17 +87,26 @@ const TimelineEntry = ({
         </motion.p>
 
         {images && (
-          <div className="grid grid-cols-1 gap-4">
-            {images.map((image, index) => (
-              <div key={index} className="relative w-full aspect-video">
+        <div className="grid grid-cols-1 gap-4">
+          {images.map((image, index) => (
+            <div key={index} className="relative w-full aspect-video">
+              {!imageError[image.src] ? (
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
                   className="rounded-lg object-cover shadow-lg"
+                  onError={() => handleImageError(image.src)}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index === 0} // Load the first image with priority
                 />
-              </div>
-            ))}
+              ) : (
+                <div className="w-full h-full bg-gray-800 rounded-lg flex items-center justify-center">
+                  <span className="text-gray-400">Image not available</span>
+                </div>
+              )}
+            </div>
+          ))}
           </div>
         )}
       </div>
@@ -118,15 +133,15 @@ export const Timeline = () => {
       },
       images: [
         {
-          src: "/unchartedreality1.png",
+          src: "/unchartedreality1.jpg",
           alt: "TEDxSIST 2023 Event"
         },
         {
-          src: "/unchartedreality2.png",
+          src: "/unchartedreality2.jpg",
           alt: "TEDxSIST 2023 Speaker"
         },
         {
-          src: "/unchartedreality3.png",
+          src: "/unchartedreality3.jpg",
           alt: "TEDxSIST 2023 Speaker"
         }
       ]

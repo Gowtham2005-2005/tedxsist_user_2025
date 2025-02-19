@@ -13,6 +13,7 @@ import StatisticsSection from "@/components/stats";
 import App from "@/components/countdown";
 import VideoPreviewCard from "@/components/video-card-preview";
 import { VideoData, getVideoDetails, formatTimeAgo, formatDuration } from "@/lib/youtube";
+import TEDxSections from '@/components/mobile';
 
 const VIDEO_LINKS = [
   "https://www.youtube.com/watch?v=9HLDt9HhDzk",
@@ -108,10 +109,17 @@ export default function HomePage() {
       <StatisticsSection />
 
       <div className="pb-14">
+        <div className="hidden lg:block">
         <StickyScroll />
+      </div>
+
+      {/* TEDxSections for medium and small screens */}
+      <div className="block lg:hidden">
+        <TEDxSections />
+      </div>
         <div className="min-h-screen bg-background text-white ">
           <VideoArchivesSection />
-          <div className="max-w-[1440px] mx-auto px-4 md:px-24 py-8 ">
+          <div className="max-w-[1440px] mx-auto px-4  ">
             <div className="space-y-12">
               {mainVideo && (
                 <VideoPreviewCard
@@ -134,8 +142,8 @@ export default function HomePage() {
                   <div 
                     key={video.id} 
                     className={`border-gray-700 ${
-                      index < videos.length - 1 ? 'border-b lg:border-b-0 lg:border-r h-[90%]' : ''
-                    } pb-6 lg:pr-6`}
+                      index < videos.length - 1 ? 'border-b lg:border-b-0 lg:border-r lg:h-[90%]' : ''
+                    } pb-14 lg:pr-6`}
                   >
                     <VideoPreviewCard
                       category="INSPIRATION"

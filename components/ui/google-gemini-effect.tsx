@@ -101,11 +101,11 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
             <HoverBorderGradient
               containerClassName="rounded-[60px]"
               as="button"
-              className="group relative flex items-center gap-1 rounded-[60px] bg-black/90 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-2.5 md:py-3 text-sm text-primary backdrop-blur-sm transition-all duration-300 hover:bg-[#EB0028] hover:text-white hover:border-primary hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] border border-[#EB0028]"
+              className="group  lative flex items-center gap-1 rounded-[60px] bg-black/90 px-6 sm:px-6 md:px-6 lg:px-12 py-1 sm:py-2.5 md:py-2  text-primary backdrop-blur-sm transition-all duration-300 hover:bg-[#EB0028] hover:text-white hover:border-primary hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] border border-[#EB0028]"
               onClick={() => router.push("/register")}
             >
               <div className="flex items-center gap-2">
-                <span className="relative z-10 text-xl sm:text-2xl md:text-2xl lg:text-xl font-bold">Register</span>
+                <span className="relative z-10 text-xl sm:text-md md:text-2xl lg:text-xl font-bold">Register</span>
                 <ArrowRight className="font-bold relative z-10 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 transition-transform duration-300 group-hover:translate-x-1" />
                 <div className="absolute inset-0 rounded-full border border-white/10" />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/[0.03] to-transparent" />
@@ -117,11 +117,19 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 1440 780"
+        viewBox="0 0 1440 800"
         preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute inset-0 w-full h-full"
       >
+        <g className="lg:block hidden">
+    <rect width="1440" height="800" />
+    
+  </g>
+  <g className="md:block lg:hidden hidden">
+    <rect width="1440" height="800" />
+    
+  </g>
         {[0, 1, 2, 3, 4].map((index) => (
           <motion.path
             key={index}

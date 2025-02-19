@@ -318,26 +318,26 @@ const BlogsMenu = () => {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    href="/blogs"
+                    href="/blogs/tedx-sist-2025"
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium text-foreground">
-                      Featured Blog
+                      TEDxSIST 2025: Resilience
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Check out our latest featured blog post
+                      Featured Blog
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/blogs/tech" title="Tech">
-                Latest in technology and innovation
+              <ListItem href="/blogs/magic-in-quiet-moments" title="Magic in quiet moments: Behind the scenes journey">
+                Behind the Scenes
               </ListItem>
-              <ListItem href="/blogs/lifestyle" title="Lifestyle">
-                Tips for a better life
+              <ListItem href="/blogs/a-story-of-the-grit-and-sweat-behind-resilience-a-case-study-of-our-local-community" title="A Story of The Grit and Sweat Behind Resilience">
+                A Case Study
               </ListItem>
-              <ListItem href="/blogs/travel" title="Travel">
-                Explore the world through our experiences
+              <ListItem href="/blogs/its-tedxsist-time-are-you-ready-to-make-the-most-of-it" title="It’s TEDx SIST Time! Are You Ready to Make the Most of It?">
+                Experience TEDxSIST 2025
               </ListItem>
             </ul>
           </NavigationMenuContent>

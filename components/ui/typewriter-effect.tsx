@@ -235,11 +235,11 @@ export const TypewriterBackspace: React.FC<TypewriterProps> = ({
   }, [currentText, currentWordIndex, isDeleting, words, isStarted]);
 
   return (
-    <div className={cn("flex space-x-1 my-6", className)}>
+    <div className={cn("flex space-x-1 my-8", className)}>
       <div className="overflow-hidden pb-2">
         <div
           className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold"
-          style={{ whiteSpace: "nowrap" }}
+          
         >
           <span className="dark:text-primary text-white">
             Igniting Ideas, Inspiring Change.

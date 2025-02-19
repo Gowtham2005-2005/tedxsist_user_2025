@@ -41,7 +41,7 @@ export const blogData: Record<string, BlogPost> = {
     sections: [
       { 
         title: "Introduction", 
-        content: "Welcome to the TEDx community, where ideas go beyond limits and spark significant change. TEDx events celebrate innovation, storytelling, and human connection—uniting visionaries and change-makers worldwide. Here, curiosity flourishes, perspectives come together, and fresh possibilities arise. Whether you’re looking for inspiration, questioning the norm, or envisioning the future, you're invited to uncover ideas that can transform our world." 
+        content: "Welcome to the TEDx community, where ideas go beyond limits and spark significant change. TEDx events celebrate innovation, storytelling, and human connection—uniting visionaries and change-makers worldwide. Here, curiosity flourishes, perspectives come together, and fresh possibilities arise. Whether you\'\re looking for inspiration, questioning the norm, or envisioning the future, you're invited to uncover ideas that can transform our world." 
       },
       { 
         title: "The purpose of TEDx", 

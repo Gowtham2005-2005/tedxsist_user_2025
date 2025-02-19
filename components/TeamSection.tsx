@@ -1,9 +1,10 @@
 "use client";
-
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+
 
 interface Testimonial {
   id: number;
@@ -252,8 +253,8 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
 };
 
 interface Tab {
-  title: TeamName;
-  value: TeamName;
+  title: string;
+  value: string;
   content: React.ReactNode;
 }
 
@@ -279,42 +280,86 @@ const Tabs = ({
   contentClassName,
 }: TabsProps) => {
   const [active, setActive] = useState(propTabs[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrevious = () => {
+    const newIndex = Math.max(0, activeIndex - 1);
+    setActiveIndex(newIndex);
+    setActive(propTabs[newIndex]);
+  };
+
+  const handleNext = () => {
+    const newIndex = Math.min(propTabs.length - 1, activeIndex + 1);
+    setActiveIndex(newIndex);
+    setActive(propTabs[newIndex]);
+  };
 
   return (
+    
     <>
-      <div
-        className={cn(
-          "flex flex-row items-center gap-4 justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
-          containerClassName
-        )}
-      >
-        {propTabs.map((tab) => (
+    
+      <div className="relative w-full max-w-full px-3">
+        
+        <div
+          className={cn(
+            "flex items-center justify-center gap-4 [perspective:1000px]",
+            containerClassName
+          )}
+        >
+          
+          {/* Left Arrow */}
+          
           <button
-            key={tab.title}
-            onClick={() => setActive(tab)}
+          type="button"
+          title="button"
+            onClick={handlePrevious}
+            disabled={activeIndex === 0}
             className={cn(
-              "relative",
+              "absolute left-0 p-2 transition-opacity",
+              activeIndex === 0 ? "opacity-50 cursor-not-allowed" : "opacity-100"
+            )}
+          >
+            <ChevronLeft className="w-8 h-8 p-2 bg-neutral-800 rounded-full" />
+            
+          </button>
+
+          {/* Active Tab */}
+          <motion.button
+            key={active.value}
+            className={cn(
+              "relative px-8 py-2",
               tabClassName,
-              // Apply active styles immediately through className
-              active.value === tab.value && activeTabClassName
+              activeTabClassName
             )}
             style={{
               transformStyle: "preserve-3d",
             }}
           >
-            {active.value === tab.value && (
-              <motion.div
-                layoutId="clickedbutton"
-                initial={false}
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
-                className="absolute inset-0 rounded-full"
-              />
-            )}
+            <motion.div
+              layoutId="clickedbutton"
+              className="absolute inset-0 rounded-full"
+            />
             <span className="relative block">
-              {tab.title}
+              {active.title}
             </span>
+          </motion.button>
+
+          {/* Right Arrow */}
+          <button
+          type="button"
+          title="button"
+            onClick={handleNext}
+            disabled={activeIndex === propTabs.length - 1}
+            className={cn(
+              "absolute right-0 p-2 transition-opacity",
+              activeIndex === propTabs.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
+            )}
+
+          > 
+            <ChevronRight className="w-8 h-8 p-2 bg-neutral-800 rounded-full" />
+            
           </button>
-        ))}
+        </div>
       </div>
       
       <div className="relative mt-12">

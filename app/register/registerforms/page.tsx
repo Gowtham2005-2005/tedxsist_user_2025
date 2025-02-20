@@ -10,6 +10,13 @@ import { useToast } from "@/hooks/use-toast";
 import { db } from "@/firebase/firebase-client"; // Ensure Firestore is properly configured
 import { doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
+import { AlertCircle } from "lucide-react"
+ 
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@/components/ui/alert"
 export default function RegisterFormsPage() {
   const { toast } = useToast();
   const { user } = useAuth();
@@ -139,6 +146,15 @@ if (isRegistered === null) {
         <h2 className="font-bold text-5xl text-neutral-200 text-center mb-8">
           <span className="text-primary">TEDx</span>SIST 2025 Registration
         </h2>
+       <div className="mt-16 mb-4">
+  <Alert variant="destructive">
+    <AlertCircle className="h-4 w-4" />
+    <AlertTitle>ATTENTION</AlertTitle>
+    <AlertDescription>
+      Some departments have CAE on the event day (Feb 24, 2025). Please check your schedule, as the event begins at 10 AM.
+    </AlertDescription>
+  </Alert>
+</div>
 
         <form className="space-y-8" onSubmit={handleSubmit}>
           {/* Personal Details Card */}

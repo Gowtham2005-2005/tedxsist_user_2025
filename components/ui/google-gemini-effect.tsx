@@ -48,7 +48,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               }}
               className="text-base sm:text-lg md:text-2xl lg:text-xl text-neutral-300 dark:text-neutral-300"
             >
-              Registrations Open!!
+              Registrations Closed!!
             </motion.p>
 
             <motion.h1

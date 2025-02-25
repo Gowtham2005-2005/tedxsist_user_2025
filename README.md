@@ -1,111 +1,50 @@
-# TEDxSIST 2025
+# TEDxSIST 2025  
 
-(Still under development)
+🔗 **Live Website:** [tedxsist.com](https://tedxsist.com)  
 
-## Getting Started
+## Overview  
 
-### Installation
+The **TEDxSIST 2025 Website** serves as the public-facing platform for event registrations, information, and updates. It features:  
 
-First, install dependencies:
+- **User Registration** – Secure and seamless registration system.  
+- **Automated Email Confirmation** – Users receive a confirmation email upon registration.  
+- **Event Information** – Details about speakers, schedules, and themes.  
+- **Responsive UI** – Optimized for desktop and mobile experiences.  
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
+## Security Considerations  
 
-### Running the Development Server
+- **Firebase Authentication** ensures secure access.  
+- **Next.js API Routes** are secured to prevent unauthorized access.  
+- **Firestore Security Rules** are implemented and require further testing.  
+- **Error Handling** improvements are planned to prevent unauthorized route access in case of network issues.  
 
-To start the development server, run:
+## Contributors  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![GitHub Contributors](https://img.shields.io/github/contributors/Gowtham2005-2005/tedxsist_user_2025?color=blue)](https://github.com/Gowtham2005-2005/tedxsist_user_2025/graphs/contributors)  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gowtham2005-2005">
+        <img src="https://github.com/Gowtham2005-2005.png?s=200" width="80" height="80" style="border-radius: 50%;" />
+        <br /><sub><b>Gowtham</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/HariPrashanth2242">
+        <img src="https://github.com/HariPrashanth2242.png?s=200" width="80" height="80" style="border-radius: 50%;" />
+        <br /><sub><b>Hari Prashanth</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Click here to view all contributors](https://github.com/Gowtham2005-2005/tedxsist_user_2025/graphs/contributors).  
 
-### Local Development Setup
+## Contribute  
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
-2. Install dependencies using one of the package managers mentioned above.
-3. Start the development server with `npm run dev`.
+If you find any issues, please contribute to the repo. Our team will be very happy to learn new things and invite valid corrections!  
 
-### Production Setup
+## License  
 
-To build the application for production:
-
-```bash
-npm run build
-```
-
-To start the production server:
-
-```bash
-npm run start
-```
-
-Ensure that environment variables are properly configured for production use.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Contribution Guidelines
-
-We welcome contributions! Follow these steps:
-
-1. **Fork the repository** on GitHub.
-2. **Clone your fork**:
-   ```bash
-   git clone <your-fork-url>
-   cd <project-directory>
-   ```
-3. **Set up the upstream repository**:
-   ```bash
-   git remote add upstream <original-repo-url>
-   ```
-4. **Pull the latest changes from upstream**:
-   ```bash
-   git pull upstream main  # or master, depending on the branch name
-   ```
-5. **Work on your feature or fix**, then commit your changes.
-6. **Push your changes to your fork**:
-   ```bash
-   git push origin <your-branch>
-   ```
-7. **Submit a Pull Request (PR)** to the main repository.
-
-### Notes:
-
-- Avoid creating branches in the main repository.
-- Always keep your fork updated with the latest changes from `upstream`.
-
-### TO-DO List
-
-- Error Handling for all routes (with internet firebase auth fails, but even then the protected route can be accessed, but if network connectivity is present such errors don't occur)
-
-- hydration error on navbar, subscribe is a unknown element that is causing this problem.
-
-- the security of the firebase backend must be tested.
-- the api routes at next.js are secured for now.
+© TEDxSIST @tech_team

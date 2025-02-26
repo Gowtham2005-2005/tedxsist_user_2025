@@ -15,7 +15,7 @@ The **TEDxSIST 2025 Website** serves as the public-facing platform for event reg
 
 - **Firebase Authentication** ensures secure access.  
 - **Next.js API Routes** are secured to prevent unauthorized access.  
-- **Firestore Security Rules** are implemented and require further testing.  
+- **Firestore Security Rules** are implemented.
 - **Error Handling** improvements are planned to prevent unauthorized route access in case of network issues.  
 
 ## Contributors  

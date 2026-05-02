@@ -295,23 +295,12 @@ const Tabs = ({
   };
 
   return (
-    
     <>
-    
       <div className="relative w-full max-w-full px-3">
-        
-        <div
-          className={cn(
-            "flex items-center justify-center gap-4 [perspective:1000px]",
-            containerClassName
-          )}
-        >
-          
-          {/* Left Arrow */}
-          
+        <div className={cn("flex items-center justify-center gap-4 [perspective:1000px]", containerClassName)}>
           <button
-          type="button"
-          title="button"
+            type="button"
+            title="previous"
             onClick={handlePrevious}
             disabled={activeIndex === 0}
             className={cn(
@@ -320,44 +309,28 @@ const Tabs = ({
             )}
           >
             <ChevronLeft className="w-8 h-8 p-2 bg-neutral-800 rounded-full" />
-            
           </button>
 
-          {/* Active Tab */}
           <motion.button
             key={active.value}
-            className={cn(
-              "relative px-8 py-2",
-              tabClassName,
-              activeTabClassName
-            )}
-            style={{
-              transformStyle: "preserve-3d",
-            }}
+            className={cn("relative px-8 py-2", tabClassName, activeTabClassName)}
+            style={{ transformStyle: "preserve-3d" }}
           >
-            <motion.div
-              layoutId="clickedbutton"
-              className="absolute inset-0 rounded-full"
-            />
-            <span className="relative block">
-              {active.title}
-            </span>
+            <motion.div layoutId="clickedbutton" className="absolute inset-0 rounded-full" />
+            <span className="relative block">{active.title}</span>
           </motion.button>
 
-          {/* Right Arrow */}
           <button
-          type="button"
-          title="button"
+            type="button"
+            title="next"
             onClick={handleNext}
             disabled={activeIndex === propTabs.length - 1}
             className={cn(
               "absolute right-0 p-2 transition-opacity",
               activeIndex === propTabs.length - 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"
             )}
-
-          > 
+          >
             <ChevronRight className="w-8 h-8 p-2 bg-neutral-800 rounded-full" />
-            
           </button>
         </div>
       </div>

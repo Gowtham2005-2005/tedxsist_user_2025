@@ -28,28 +28,28 @@ interface BlogPost {
 
 export const blogData: Record<string, BlogPost> = {
   'tedx-sist-2025': {
-    image: "/placeholder.svg",
+    image: "/bg.png",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-2",
     title: "TEDxSIST 2025: Resilience",
     author: { 
       name: "Neeharika and Team", 
-      avatar: "/placeholder.svg" 
+      avatar: "/logo.png" 
     },
     description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
     timeAgo: formatRelativeTime(1739356812),
     sections: [
       { 
         title: "Introduction", 
-        content: "Welcome to the TEDx community, where ideas go beyond limits and spark significant change. TEDx events celebrate innovation, storytelling, and human connection—uniting visionaries and change-makers worldwide. Here, curiosity flourishes, perspectives come together, and fresh possibilities arise. Whether you\'\re looking for inspiration, questioning the norm, or envisioning the future, you're invited to uncover ideas that can transform our world." 
+        content: "Welcome to the TEDx community, where ideas go beyond limits and spark significant change. TEDx events celebrate innovation, storytelling, and human connection—uniting visionaries and change-makers worldwide. Here, curiosity flourishes, perspectives come together, and fresh possibilities arise. Whether you're looking for inspiration, questioning the norm, or envisioning the future, you're invited to uncover ideas that can transform our world." 
       },
       { 
         title: "The purpose of TEDx", 
-        content: "At TED, the global mission focuses on discovering and sharing impactful, original ideas within local communities while amplifying them globally. This goal is achieved through organizing local events that highlight diverse perspectives and ignite meaningful discussions, effectively encapsulating the essence of TED's motto, \"\ideas worth spreading,\"\.\nAt TEDxSIST, we have cultivated that spark, elevating the expressions of essential concepts articulated by students, innovators, and thought leaders.\nThis year\'\s TEDxSIST is poised to be our most exhilarating to date, providing a platform for the emergence of ideas that challenge conventional thinking." 
+        content: "At TED, the global mission focuses on discovering and sharing impactful, original ideas within local communities while amplifying them globally. This goal is achieved through organizing local events that highlight diverse perspectives and ignite meaningful discussions, effectively encapsulating the essence of TED's motto, \"ideas worth spreading\".\nAt TEDxSIST, we have cultivated that spark, elevating the expressions of essential concepts articulated by students, innovators, and thought leaders.\nThis year's TEDxSIST is poised to be our most exhilarating to date, providing a platform for the emergence of ideas that challenge conventional thinking." 
       },
       {
         title:"What is TEDx?",
-        content: "TEDx is an independently organised TED event by local communities and they promote TED\'\s mission of spreading ideas. x = independently organized event Members from a community obtain a license from TED to host their own TED events and speakers are invited to speak for 18 minutes or less. A TEDx event is centered around a theme and it fosters thinking, innovation and change. The goal of a TEDx event is to spark conversation, connection and community. Unlike larger conferences, TEDx events are focused and streamlined— there are no panels, breakout sessions, or multiple tracks—just a series of impactful talks that ignite curiosity and inspire action.\n\nThese TEDx events are then made globally available where they are shared to people all across the world in the TEDx official channel.\n\nTEDxSIST is one of the most eagerly awaited events on campus. TEDxSIST assembles visionary speakers, engaging audiences and fosters change both locally and globally."
+        content: "TEDx is an independently organised TED event by local communities and they promote TED's mission of spreading ideas. x = independently organized event Members from a community obtain a license from TED to host their own TED events and speakers are invited to speak for 18 minutes or less. A TEDx event is centered around a theme and it fosters thinking, innovation and change. The goal of a TEDx event is to spark conversation, connection and community. Unlike larger conferences, TEDx events are focused and streamlined— there are no panels, breakout sessions, or multiple tracks—just a series of impactful talks that ignite curiosity and inspire action.\n\nThese TEDx events are then made globally available where they are shared to people all across the world in the TEDx official channel.\n\nTEDxSIST is one of the most eagerly awaited events on campus. TEDxSIST assembles visionary speakers, engaging audiences and fosters change both locally and globally."
       },
       {
         title:"A Glimpse",
@@ -57,19 +57,19 @@ export const blogData: Record<string, BlogPost> = {
       },
       {
         title:"TEDxSIST 2023: Exploring the Uncharted Reality",
-        content:"TEDxSIST 2023 extended an invitation to attendees to engage in a profound journey of exploration, centered on the intellectually stimulating theme of \"Uncharted Reality.\" This theme encouraged participants to critically examine the prevailing norms, challenge established assumptions, and pursue novel frontiers in both their personal and collective endeavours. It served as a call to reflect on individual and societal narratives, empowering individuals to make informed decisions and to construct a more promising future through the prism of their historical experiences.\nThe event convened visionary speakers, each of whom presented innovative perspectives and motivating insights that expanded the boundaries of conventional thought and illuminated the previously uncharted dimensions of our collective reality.Broadening Horizons and Reimagining Opportunities\n\nThis year, we warmly invite you to embark on a journey that challenges the very limits of what is possible. Our theme, 'Resilience,' serves as a powerful impetus, encouraging you to rethink and expand upon all preconceived notions surrounding innovation and progress. We believe that by embracing resilience, we can unlock new paths of creativity and progress that transcend traditional boundaries.\"\n\nResilience isn\'\ t just about bouncing back from setbacks; it\'\s about the amazing strength to adapt, grow, and truly thrive when faced with challenges. It\'\s that inner power that helps us stay grounded and focused on our purpose, even during life\'\s toughest moments.\n\nWe build resilience by embracing uncertainty, navigating through chaos, and coming out stronger after each experience. It\'\s that unwavering belief that, no matter how intense the storm, we can turn our struggles into stepping stones towards a brighter, more empowered future."
+        content:"TEDxSIST 2023 extended an invitation to attendees to engage in a profound journey of exploration, centered on the intellectually stimulating theme of \"Uncharted Reality.\" This theme encouraged participants to critically examine the prevailing norms, challenge established assumptions, and pursue novel frontiers in both their personal and collective endeavours. It served as a call to reflect on individual and societal narratives, empowering individuals to make informed decisions and to construct a more promising future through the prism of their historical experiences.\nThe event convened visionary speakers, each of whom presented innovative perspectives and motivating insights that expanded the boundaries of conventional thought and illuminated the previously uncharted dimensions of our collective reality.Broadening Horizons and Reimagining Opportunities\n\nThis year, we warmly invite you to embark on a journey that challenges the very limits of what is possible. Our theme, 'Resilience,' serves as a powerful impetus, encouraging you to rethink and expand upon all preconceived notions surrounding innovation and progress. We believe that by embracing resilience, we can unlock new paths of creativity and progress that transcend traditional boundaries.\"\n\nResilience isn\'t just about bouncing back from setbacks; it\'s about the amazing strength to adapt, grow, and truly thrive when faced with challenges. It\'s that inner power that helps us stay grounded and focused on our purpose, even during life\'s toughest moments.\n\nWe build resilience by embracing uncertainty, navigating through chaos, and coming out stronger after each experience. It\'s that unwavering belief that, no matter how intense the storm, we can turn our struggles into stepping stones towards a brighter, more empowered future."
       }
       
     ]
   },
   'magic-in-quiet-moments': {
-    image: "/placeholder.svg",
+    image: "/bg.png",
     badge: { icon: "✨", text: "Behind the Scenes" },
     title: "Magic in quiet moments: Behind the scenes journey",
     className: "md:col-span-1",
     author: { 
       name: "Aakriti Bose", 
-      avatar: "/placeholder.svg" 
+      avatar: "/logo.png" 
     },
     description: "Delving into this year's theme and its significance. A deeper look at how we crafted meaningful experiences through thoughtful design and careful attention to detail.",
     timeAgo: formatRelativeTime(1739356812),
@@ -113,13 +113,13 @@ export const blogData: Record<string, BlogPost> = {
     ]
   },
   'a-story-of-the-grit-and-sweat-behind-resilience-a-case-study-of-our-local-community': {
-    image: "/placeholder.svg",
+    image: "/bg.png",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-1",
     title: "A Story of The Grit and Sweat Behind Resilience: A Case Study Of Our Local Community",
     author: { 
       name: "Catherine Oviya", 
-      avatar: "/placeholder.svg" 
+      avatar: "/logo.png" 
     },
     description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
     timeAgo: formatRelativeTime(1739356812),
@@ -147,13 +147,13 @@ export const blogData: Record<string, BlogPost> = {
     ]
   },
   'its-tedxsist-time-are-you-ready-to-make-the-most-of-it': {
-    image: "/placeholder.svg",
+    image: "/bg.png",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-2",
     title: "It’s TEDx SIST Time! Are You Ready to Make the Most of It?",
     author: { 
       name: "Catherine Oviya", 
-      avatar: "/placeholder.svg" 
+      avatar: "/logo.png" 
     },
     description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
     timeAgo: formatRelativeTime(1739356812),
@@ -180,8 +180,6 @@ export const blogData: Record<string, BlogPost> = {
       }
     ]
   },
-  
-  
 }
 
 export type BlogDataType = typeof blogData;

@@ -159,7 +159,6 @@ const Tabs = ({
             className={cn(
               "relative",
               tabClassName,
-              // Add immediate background styling for active tab
               active.value === tab.value && activeTabClassName
             )}
             style={{

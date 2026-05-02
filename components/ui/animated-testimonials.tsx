@@ -49,7 +49,7 @@ export const AnimatedTestimonials = ({
   const randomRotations = useMemo(() => {
     if (!isMounted) return testimonials.map(() => 0);
     return testimonials.map(() => Math.floor(Math.random() * 21) - 10);
-  }, [isMounted, testimonials.length]);
+  }, [isMounted, testimonials]);
 
   const randomRotateY = (index: number) => {
     return isMounted ? randomRotations[index] : 0;

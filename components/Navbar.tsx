@@ -42,8 +42,13 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isFAQVisible, setIsFAQVisible] = React.useState(false)
   const [isOpen, setIsOpen] = React.useState(false)
+  const [isMounted, setIsMounted] = React.useState(false)
   const router = useRouter()
   const pathname = usePathname()
+
+  React.useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -82,6 +87,8 @@ const Navbar = () => {
       }
     }
   }
+
+  if (!isMounted) return null;
 
   return (
     <FAQContext.Provider value={{ isFAQVisible, setIsFAQVisible }}>

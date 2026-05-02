@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 
 const App = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(1024); // Default to desktop for SSR
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
 
@@ -82,13 +82,13 @@ const App = () => {
         className="w-full flex flex-col items-center justify-center"
       >
         <p className="text-2xl mb-4">
-          Save the date{" "}
-          <span className="text-primary font-bold">24th Jan 2025</span>
+          2026 Registration Open - Save the date{" "}
+          <span className="text-primary font-bold">24th June 2026</span>
         </p>
 
         {isMounted && windowWidth > 0 && (
           <FlipClockCountdown
-            to={new Date("2025-02-24T00:00:00").getTime()}
+            to={new Date("2026-06-24T00:00:00").getTime()}
             labels={["Days", "Hours", "Minutes", "Seconds"]}
             labelStyle={{
               fontSize: `${sizes.label}px`,

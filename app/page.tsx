@@ -31,9 +31,15 @@ export default function HomePage() {
    const [cursorHidden, setCursorHidden] = useState(false);
   const [videos, setVideos] = useState<VideoData[]>([]);
   const [mainVideo, setMainVideo] = useState<VideoData | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
   
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false });
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   useEffect(() => {
     const fetchVideos = async () => {
       try {
@@ -97,13 +103,12 @@ export default function HomePage() {
         }
       >
         <Image
-          src="/aboutheader.jpg"
-          alt="hero"
+          src="/aboutheader.png"
+          alt="Glimpses of TEDxSIST"
           height={720}
           width={1400}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
-         
         />
       </ContainerScroll>
 
@@ -169,6 +174,8 @@ export default function HomePage() {
       <FAQ2 />
     </main>
   );
+
+  if (!isMounted) return null;
 
   return !mainVideo ? renderContent() : renderContent();
 }

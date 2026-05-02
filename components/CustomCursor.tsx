@@ -28,10 +28,12 @@ const cursorVariants = {
 
 export default function CustomCursor({ isHidden = false }: { isHidden?: boolean }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const [isTouchDevice, setIsTouchDevice] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(true) // Default true for SSR
+  const [isMounted, setIsMounted] = useState(false)
   const [cursorVariant, setCursorVariant] = useState<"default" | "hover" | "hidden">("default")
 
   useEffect(() => {
+    setIsMounted(true)
     const checkTouch = () => {
       setIsTouchDevice(!window.matchMedia("(pointer: fine)").matches)
     }
@@ -72,7 +74,7 @@ export default function CustomCursor({ isHidden = false }: { isHidden?: boolean 
     }
   }, [isTouchDevice, isHidden])
 
-  if (isTouchDevice) return null
+  if (!isMounted || isTouchDevice) return null
 
   return (
     <motion.div

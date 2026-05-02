@@ -14,7 +14,7 @@ export const ContainerScroll = ({
   const { scrollYProgress } = useScroll({
     target: containerRef,
   });
-  const [isMobile, setIsMobile] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(true); // Default true for SSR
 
   React.useEffect(() => {
     const checkMobile = () => {

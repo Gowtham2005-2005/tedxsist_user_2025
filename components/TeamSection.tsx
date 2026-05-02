@@ -14,18 +14,22 @@ interface Testimonial {
   src: string;
 }
 
-type TeamName = "Organisers" | "Curation Team" | "Finance Team" | "Operations Team" | "Production Team" | "Tech Team";
+type TeamName = "2025 Team" | "Organisers" | "Curation Team" | "Finance Team" | "Operations Team" | "Production Team" | "Tech Team";
 
 const teams: TeamName[] = [
-  "Organisers",
-  "Curation Team",
-  "Finance Team",
-  "Operations Team",
-  "Production Team",
-  "Tech Team",
+  "2025 Team",
 ];
 
 const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
+  "2025 Team": [
+    {
+      id: 0,
+      quote: "Team details coming soon...",
+      name: "TBA",
+      designation: "TBA",
+      src: "/sample.png",
+    },
+  ],
   "Organisers": [
     {
       id: 1,

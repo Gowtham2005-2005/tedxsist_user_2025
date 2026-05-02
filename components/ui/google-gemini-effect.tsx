@@ -71,7 +71,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
                 }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold leading-none"
               >
-                <span className="text-primary">TEDx</span>SIST 2025
+                <span className="text-primary">TEDx</span>SIST 2026
               </motion.span>
               <motion.div
                 initial={{ opacity: 0, y: 15 }}

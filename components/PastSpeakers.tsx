@@ -12,8 +12,17 @@ interface Testimonial {
   src: string;
 }
 
-type Year =  2023 | 2022;
-const years = [ 2023, 2022] as const;
+type Year = 2025 | 2023 | 2022;
+const years = [2025, 2023, 2022] as const;
+
+const testimonials2025: Testimonial[] = [
+  {
+    quote: "Speaker details coming soon...",
+    name: "TBA",
+    designation: "TBA",
+    src: "/sample.png",
+  },
+]
 
 
 
@@ -91,6 +100,7 @@ const testimonials2022: Testimonial[] = [
 
 const createYearContent = (year: Year) => {
   const testimonialsByYear: Record<Year, Testimonial[]> = {
+    2025: testimonials2025,
     2023: testimonials2023,
     2022: testimonials2022,
   }

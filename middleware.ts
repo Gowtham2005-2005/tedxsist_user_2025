@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
-  const registrationsOpen = false; // Change to true when registration opens
+  const registrationsOpen = true; // Change to true when registration opens
 
   if (!registrationsOpen) {
     const protectedRoutes = ["/register", "/register/registerforms"];

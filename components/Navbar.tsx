@@ -134,7 +134,7 @@ const Navbar = () => {
                 containerClassName="rounded-[var(--radius)]"
                 as="button"
                 className="flex items-center gap-2 px-4 py-2.5"
-                onClick={() => router.push("/register")}
+                onClick={() => router.push("/registrations-closed")}
               >
                 <div className="flex items-center gap-2">
                   <span className="text-base font-medium leading-none">Register</span>
@@ -221,7 +221,7 @@ const Navbar = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <button
-                      onClick={() => router.push("/register")}
+                      onClick={() => router.push("/registrations-closed")}
                       className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                     >
                       <span>Register</span>

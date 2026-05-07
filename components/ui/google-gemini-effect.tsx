@@ -102,7 +102,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               containerClassName="rounded-[60px]"
               as="button"
               className="group  lative flex items-center gap-1 rounded-[60px] bg-black/90 px-6 sm:px-6 md:px-6 lg:px-12 py-1 sm:py-2.5 md:py-2  text-primary backdrop-blur-sm transition-all duration-300 hover:bg-[#EB0028] hover:text-white hover:border-primary hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] border border-[#EB0028]"
-              onClick={() => router.push("/register")}
+              onClick={() => router.push("/registrations-closed")}
             >
               <div className="flex items-center gap-2">
                 <span className="relative z-10 text-xl sm:text-md md:text-2xl lg:text-xl font-bold">Register</span>

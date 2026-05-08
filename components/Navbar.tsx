@@ -55,7 +55,7 @@ const Navbar = () => {
     { href: "/about", label: "About" },
     { href: "/events", label: "Events" },
     { href: "/blogs", label: "Blogs" },
-    { href: "/#faq-section", label: "FAQs" },
+    { href: "/faq", label: "FAQs" },
   ]
 
   React.useEffect(() => {
@@ -127,7 +127,7 @@ const Navbar = () => {
               
               <BlogsMenu />
               
-              <NavLink href="/#faq-section" onClick={scrollToFAQ}>FAQs</NavLink>
+              <NavLink href="/faq">FAQs</NavLink>
             </div>
 
             {/* Register Button - Desktop */}

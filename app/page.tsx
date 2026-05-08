@@ -40,6 +40,22 @@ export default function HomePage() {
     setIsMounted(true);
   }, []);
 
+  // Handle hash navigation (e.g. /#faq-section from other pages)
+  useEffect(() => {
+    if (isMounted && window.location.hash === "#faq-section") {
+      setTimeout(() => {
+        const faqSection = document.getElementById("faq-section");
+        if (faqSection) {
+          const navHeight = 100;
+          window.scrollTo({
+            top: faqSection.offsetTop - navHeight,
+            behavior: "smooth",
+          });
+        }
+      }, 300);
+    }
+  }, [isMounted]);
+
   useEffect(() => {
     const fetchVideos = async () => {
       try {
@@ -175,7 +191,9 @@ export default function HomePage() {
     </main>
   );
 
-  if (!isMounted) return null;
+  if (!isMounted) return (
+    <div className="min-h-screen bg-black" />
+  );
 
   return !mainVideo ? renderContent() : renderContent();
 }

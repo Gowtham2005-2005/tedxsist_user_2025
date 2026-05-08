@@ -88,7 +88,9 @@ const Navbar = () => {
     }
   }
 
-  if (!isMounted) return null;
+  if (!isMounted) return (
+    <nav className="fixed top-4 left-1/2 z-50 transform -translate-x-1/2 w-11/12 max-w-7xl" />
+  );
 
   return (
     <FAQContext.Provider value={{ isFAQVisible, setIsFAQVisible }}>

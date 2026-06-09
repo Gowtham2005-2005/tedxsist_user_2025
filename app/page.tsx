@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from 'react';
 import CustomCursor from "@/components/CustomCursor";
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, Variants } from 'framer-motion';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { InfiniteMovingCardsDemo } from "@/components/Testimonials";
@@ -83,7 +83,7 @@ export default function HomePage() {
             ref={ref}
             initial={{ opacity: 0, y: 15 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-            transition={{ duration: 1 , ease: [0.25, 0.4, 0.25, 1]}} // Move delay inside transition
+            transition={{ duration: 1 , ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number]}} // Move delay inside transition
             className="w-full flex justify-center"
           >
             
@@ -180,23 +180,23 @@ const VideoArchivesSection = () => {
     margin: "-100px",
   });
 
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] },
     },
   };
 
-  const subtitleVariants = {
+  const subtitleVariants: Variants = {
     hidden: { opacity: 0, y: 20, rotateX: 15 },
     visible: {
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.1 },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number], delay: 0.1 },
     },
   };
 

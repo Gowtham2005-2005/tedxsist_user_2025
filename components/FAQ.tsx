@@ -2,7 +2,7 @@
 import { PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import React, { useRef } from "react";
-import { motion, } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -17,47 +17,47 @@ export function FAQ2() {
   const containerRef = useRef(null);
   
 
-  const titleVariants = {
+  const titleVariants: Variants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] },
     },
   };
 
-  const subtitleVariants = {
+  const subtitleVariants: Variants = {
     hidden: { opacity: 0, y: 20, rotateX: 15 },
     visible: {
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.1 },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number], delay: 0.1 },
     },
   };
 
-  const badgeVariants = {
+  const badgeVariants: Variants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number] },
     },
   };
 
-  const buttonVariants = {
+  const buttonVariants: Variants = {
     hidden: { opacity: 0, y: 20, rotateX: 15 },
     visible: {
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: { duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.1 },
+      transition: { duration: 1, ease: [0.4, 0, 0.2, 1] as [number, number, number, number], delay: 0.1 },
     },
   };
 
-  const accordionVariants = {
+  const accordionVariants: Variants = {
     hidden: { opacity: 0, y: 20 },  // Added y translation for more visible effect
     visible: { 
       opacity: 1,

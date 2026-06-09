@@ -1,9 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
-const cursorVariants = {
+const cursorVariants: Variants = {
   default: {
     width: 32,
     height: 32,

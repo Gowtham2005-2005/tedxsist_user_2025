@@ -36,7 +36,7 @@ const TimelineEntry = ({
         transition={{
           duration: 1,
           delay: 0.8,
-          ease: [0.25, 0.1, 0, 1]
+          ease: [0.25, 0.1, 0, 1] as [number, number, number, number]
         }}
       >
         <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500">
@@ -51,7 +51,7 @@ const TimelineEntry = ({
         transition={{
           duration: 1.2,
           delay: 0.8,
-          ease: [0.25, 0.1, 0, 1]
+          ease: [0.25, 0.1, 0, 1] as [number, number, number, number]
         }}
       >
         <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500">
@@ -65,7 +65,7 @@ const TimelineEntry = ({
           transition={{
             duration: 1.2,
             delay: 0.8,
-            ease: [0.25, 0.1, 0, 1],
+            ease: [0.25, 0.1, 0, 1] as [number, number, number, number],
           }}
           className="text-2xl md:text-3xl font-bold text-gray-100 mb-4"
         >
@@ -79,7 +79,7 @@ const TimelineEntry = ({
           transition={{
             duration: 1.2,
             delay: 0.8,
-            ease: [0.25, 0.1, 0, 1],
+            ease: [0.25, 0.1, 0, 1] as [number, number, number, number],
           }}
           className="text-base md:text-lg text-gray-400 leading-relaxed max-w-2xl mb-8"
         >
@@ -221,7 +221,7 @@ export const Timeline = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
               duration: 1.5,
-              ease: [0.25, 0.1, 0, 1]
+              ease: [0.25, 0.1, 0, 1] as [number, number, number, number]
             }}
             className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight mt-12"
           >
@@ -234,7 +234,7 @@ export const Timeline = () => {
             transition={{ 
               duration: 1.2,
               delay: 0.4,
-              ease: [0.25, 0.1, 0, 1]
+              ease: [0.25, 0.1, 0, 1] as [number, number, number, number]
             }}
             className="text-base md:text-lg text-gray-400 leading-relaxed max-w-2xl"
           >

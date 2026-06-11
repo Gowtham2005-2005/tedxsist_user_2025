@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TEDxSIST",
+  title: "TEDxSIST 2026",
   description: "TEDxSIST, official website for TEDx event at SIST",
   openGraph: {
     type: "website",
     url: "https://tedxsist.com",
-    title: "TEDxSIST 2025",
+    title: "TEDxSIST 2026",
     description: "Explore TEDxSIST, featuring inspiring talks and interactive events.",
     images: [{ url: "https://tedxsist.com/logo.png", alt: "TEDxSIST Logo" }],
   },

@@ -56,7 +56,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Mukesh, TEDxSIST 2025’s Cluster Coordinator, blends creativity with leadership. He expertly navigates communication across diverse teams, ensuring smooth coordination and an event that challenges boundaries, inspiring innovation and immersive storytelling.",
       name: "Mukesh.D.R",
       designation: "Cluster Coordinator",
-      src: "/coorganizerclustercoordinator.jpg",
+      src: "/sample.png",
     },
   ],
   "Curation Team": [
@@ -117,7 +117,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "As Finance and Marketing Lead, Sai Tejas masterfully balances budgeting and creative promotion. His strategic mindset and problem-solving skills drive impactful campaigns and partnerships, shaping TEDxSIST 2025 into an engaging and financially sound event.",
       name: "Sai Tejas S",
       designation: "Finance and Marketing Team",
-      src: "/socialmedialead.HEIC",
+      src: "/sample.png",
     },
     {
       id: 12,

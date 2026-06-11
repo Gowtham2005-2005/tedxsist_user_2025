@@ -99,6 +99,8 @@ export const AnimatedTestimonials = ({
                     alt={testimonial.name}
                     width={500}
                     height={500}
+                    quality={100}
+                    unoptimized={true}
                     draggable={false}
                     className="h-full w-full rounded-[2rem] object-cover object-center"
                   />

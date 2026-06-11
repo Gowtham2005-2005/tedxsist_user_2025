@@ -7,19 +7,15 @@ if (!admin.apps.length) {
       process.env.FIREBASE_ADMIN_SDK_KEY || '{}'
     );
     
-    if (!serviceAccount.project_id) {
-      throw new Error('Invalid service account configuration');
+    if (serviceAccount.project_id) {
+      admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
+      });
     }
-
-    admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
-    });
   } catch (error) {
     console.error('Firebase admin initialization error:', error);
-    // You might want to throw the error here depending on your error handling strategy
-    throw new Error('Failed to initialize Firebase Admin');
   }
 }
 
-export const adminDb = getFirestore();
-export const adminAuth = admin.auth();
+export const adminDb = admin.apps.length ? getFirestore() : null as unknown as ReturnType<typeof getFirestore>;
+export const adminAuth = admin.apps.length ? admin.auth() : null as unknown as ReturnType<typeof admin.auth>;

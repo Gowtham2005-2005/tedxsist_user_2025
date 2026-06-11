@@ -42,21 +42,21 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "He fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
       name: "M. Murali Sai Ram",
       designation: "Licensee and Organiser",
-      src: "/sample.png",
+      src: "/coorganizervp.jpg",
     },
     {
       id: 2,
       quote: "Co-Organiser of TEDxSIST 2025, Thaarani embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
       designation: "Co-Organiser",
-      src: "/sample.png",
+      src: "/thaarani.jpg",
     },
     {
       id: 2,
       quote: "Mukesh, TEDxSIST 2025’s Cluster Coordinator, blends creativity with leadership. He expertly navigates communication across diverse teams, ensuring smooth coordination and an event that challenges boundaries, inspiring innovation and immersive storytelling.",
       name: "Mukesh.D.R",
       designation: "Cluster Coordinator",
-      src: "/sample.png",
+      src: "/coorganizerclustercoordinator.jpg",
     },
   ],
   "Curation Team": [
@@ -65,7 +65,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "As Curation Lead, Safa crafts powerful narratives, shaping TEDxSIST 2025 to inspire and challenge perspectives. Through thematic flow and talk structure, she ensures an immersive experience that sparks curiosity and deep engagement.",
       name: "Safa",
       designation: "Curation Lead",
-      src: "/sample.png",
+      src: "/curationlead.jpg",
     },
     {
       id: 5,
@@ -117,7 +117,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "As Finance and Marketing Lead, Sai Tejas masterfully balances budgeting and creative promotion. His strategic mindset and problem-solving skills drive impactful campaigns and partnerships, shaping TEDxSIST 2025 into an engaging and financially sound event.",
       name: "Sai Tejas S",
       designation: "Finance and Marketing Team",
-      src: "/sample.png",
+      src: "/socialmedialead.HEIC",
     },
     {
       id: 12,
@@ -147,7 +147,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Shiney Beulah, the Logistics and Operations Lead, is a dynamic multitasker who thrives on collaboration and precision. With relentless dedication, she streamlines event logistics, ensuring TEDxSIST 2025 runs flawlessly while fostering teamwork and an inspiring, detail-oriented environment.",
       name: "Shiney Beulah J",
       designation: "Logistics and Operations Team",
-      src: "/sample.png",
+      src: "/logisticsandmanagementlead.jpg",
     },
     {
       id: 16,
@@ -184,7 +184,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Dhyaneshwar, TEDxSIST 2025’s Production Lead, is a visionary force ensuring seamless execution. Known for his adaptability and sharp creative eye, he meticulously oversees every detail, blending ideation with precision to bring the event’s visual storytelling to life.",
       name: "Dhyaneshwar MD",
       designation: "Production Lead",
-      src: "/sample.png",
+      src: "/designlead.jpg",
     },
     {
       id: 21,

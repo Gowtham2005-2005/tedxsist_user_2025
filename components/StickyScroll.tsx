@@ -99,7 +99,7 @@ export default function StickyScroll() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut"  as const}}
               className="relative w-[400px] h-[300px] rounded-2xl overflow-hidden"
             >
               <Image

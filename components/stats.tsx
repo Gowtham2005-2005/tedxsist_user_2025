@@ -22,7 +22,7 @@ const AnimatedCounter = ({ value, duration = 2, inView }: AnimatedCounterProps) 
       count.set(0); // Reset counter when coming into view
       const controls = animate(count, value, {
         duration,
-        ease: "easeOut",
+        ease: "easeOut" as const,
       });
       return () => controls.stop();
     }

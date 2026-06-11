@@ -83,7 +83,7 @@ export const DirectionAwareHover = ({
             className="h-full w-full relative bg-gray-50 dark:bg-black"
             transition={{
               duration: 0.2,
-              ease: "easeOut",
+              ease: "easeOut" as const,
             }}
           >
             <Image
@@ -101,7 +101,7 @@ export const DirectionAwareHover = ({
             variants={textVariants}
             transition={{
               duration: 0.5,
-              ease: "easeOut",
+              ease: "easeOut" as const,
             }}
             className={cn(
               "text-white absolute bottom-4 left-4 z-40",

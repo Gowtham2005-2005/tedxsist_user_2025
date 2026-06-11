@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 
 interface Step {
   title: string;
@@ -55,7 +55,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ step, index, isOdd }) => {
   const isCardInView = useInView(cardRef, { once: false, amount: 0.6 });
   const isMarkerInView = useInView(markerRef, { once: false, amount: 0.8 });
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, x: isOdd ? 60 : -60, y: 30 },
     visible: {
       opacity: 1,
@@ -71,7 +71,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ step, index, isOdd }) => {
     },
   };
 
-  const markerVariants = {
+  const markerVariants: Variants = {
     hidden: { scale: 0.3, opacity: 0 },
     visible: {
       scale: 1,

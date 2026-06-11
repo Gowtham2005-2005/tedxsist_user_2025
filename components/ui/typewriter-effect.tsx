@@ -42,7 +42,7 @@ export const TypewriterEffect = ({
       {
         duration: 0.3,
         delay: stagger(0.1),
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       }
     );
   }, [animate]);
@@ -153,7 +153,7 @@ export const TypewriterEffectSmooth = ({
         }}
         transition={{
           duration: 2,
-          ease: "linear",
+          ease: "linear" as const,
           delay: 1,
         }}
       >

@@ -38,7 +38,7 @@ export const Spotlight = ({
           duration,
           repeat: Infinity,
           repeatType: "reverse",
-          ease: "easeInOut",
+          ease: "easeInOut" as const,
         }}
         className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
       >
@@ -77,7 +77,7 @@ export const Spotlight = ({
           duration,
           repeat: Infinity,
           repeatType: "reverse",
-          ease: "easeInOut",
+          ease: "easeInOut" as const,
         }}
         className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
       >

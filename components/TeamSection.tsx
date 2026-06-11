@@ -42,7 +42,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "He fosters TEDxSIST 2025’s community-driven spirit. With resilience and vision, he unites teams under a shared purpose, ensuring a collaborative, impactful event that celebrates ideas and meaningful conversations.",
       name: "M. Murali Sai Ram",
       designation: "Licensee and Organiser",
-      src: "/coorganizervp.jpg",
+      src: "/sample.png",
     },
     {
       id: 2,

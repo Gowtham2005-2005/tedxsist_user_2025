@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                 {[
                   { name: "About", path: "/about" },
                   { name: "Privacy", path: "/privacy" },
-                  { name: "FAQs", path: "/#faq-section" },
+                  { name: "FAQs", path: "/faq" },
                 ].map(({ name, path }) => (
                   <li key={name}>
                     <Link href={path} className="text-gray-400 hover:text-white transition-colors duration-200">
@@ -164,7 +164,7 @@ const Footer: React.FC = () => {
   {[
     { name: "Privacy Policy", path: "/privacy" },
     { name: "Terms of Use", path: "/terms" },
-    { name: "FAQs", path: "/#faq-section" },
+    { name: "FAQs", path: "/faq" },
   ].map(({ name, path }, index, arr) => (
     <React.Fragment key={name}>
       <Link

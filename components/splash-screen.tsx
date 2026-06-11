@@ -6,14 +6,16 @@ import { usePathname } from "next/navigation";
 
 export default function LoadingWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [loading, setLoading] = useState(() => {
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("hasLoaded") !== "true";
-    }
-    return true;
-  });
+  const [loading, setLoading] = useState(true);
+  const [isClient, setIsClient] = useState(false);
   const [progress, setProgress] = useState(0);
   const [matrixText, setMatrixText] = useState("");
+
+  useEffect(() => {
+    setIsClient(true);
+    const hasLoaded = sessionStorage.getItem("hasLoaded") !== "true";
+    setLoading(hasLoaded);
+  }, []);
 
   useEffect(() => {
     if (!loading) {
@@ -47,6 +49,8 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
       clearInterval(matrixInterval);
     };
   }, [loading]);
+
+  if (!isClient) return <>{children}</>;
 
   if (loading && pathname === "/" ) {
     return (

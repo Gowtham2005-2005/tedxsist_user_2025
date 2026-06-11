@@ -48,7 +48,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               }}
               className="text-base sm:text-lg md:text-2xl lg:text-xl text-neutral-300 dark:text-neutral-300"
             >
-              Registrations Closed!!
+              Registrations Coming Soon! ✨
             </motion.p>
 
             <motion.h1
@@ -71,7 +71,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
                 }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold leading-none"
               >
-                <span className="text-primary">TEDx</span>SIST 2025
+                <span className="text-primary">TEDx</span>SIST 2026
               </motion.span>
               <motion.div
                 initial={{ opacity: 0, y: 15 }}

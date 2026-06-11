@@ -31,9 +31,31 @@ export default function HomePage() {
    const [cursorHidden, setCursorHidden] = useState(false);
   const [videos, setVideos] = useState<VideoData[]>([]);
   const [mainVideo, setMainVideo] = useState<VideoData | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
   
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false });
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Handle hash navigation (e.g. /#faq-section from other pages)
+  useEffect(() => {
+    if (isMounted && window.location.hash === "#faq-section") {
+      setTimeout(() => {
+        const faqSection = document.getElementById("faq-section");
+        if (faqSection) {
+          const navHeight = 100;
+          window.scrollTo({
+            top: faqSection.offsetTop - navHeight,
+            behavior: "smooth",
+          });
+        }
+      }, 300);
+    }
+  }, [isMounted]);
+
   useEffect(() => {
     const fetchVideos = async () => {
       try {
@@ -97,13 +119,12 @@ export default function HomePage() {
         }
       >
         <Image
-          src="/aboutheader.jpg"
-          alt="hero"
+          src="/aboutheader.png"
+          alt="Glimpses of TEDxSIST"
           height={720}
           width={1400}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
-         
         />
       </ContainerScroll>
 
@@ -168,6 +189,10 @@ export default function HomePage() {
       <InfiniteMovingCardsDemo />
       <FAQ2 />
     </main>
+  );
+
+  if (!isMounted) return (
+    <div className="min-h-screen bg-black" />
   );
 
   return !mainVideo ? renderContent() : renderContent();

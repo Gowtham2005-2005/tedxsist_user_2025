@@ -63,18 +63,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-primary selection:text-white`}
       >
-       
-        <Navbar 
-            
-          />
-          
-        <div >
+        <Navbar />
+        <div className="min-h-screen">
           {children}
         </div>
-        <>
-          <Footer />
-          <Toaster />
-        </>
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );

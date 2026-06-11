@@ -42,15 +42,20 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isFAQVisible, setIsFAQVisible] = React.useState(false)
   const [isOpen, setIsOpen] = React.useState(false)
+  const [isMounted, setIsMounted] = React.useState(false)
   const router = useRouter()
   const pathname = usePathname()
+
+  React.useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/events", label: "Events" },
     { href: "/blogs", label: "Blogs" },
-    { href: "/#faq-section", label: "FAQs" },
+    { href: "/faq", label: "FAQs" },
   ]
 
   React.useEffect(() => {
@@ -82,6 +87,10 @@ const Navbar = () => {
       }
     }
   }
+
+  if (!isMounted) return (
+    <nav className="fixed top-4 left-1/2 z-50 transform -translate-x-1/2 w-11/12 max-w-7xl" />
+  );
 
   return (
     <FAQContext.Provider value={{ isFAQVisible, setIsFAQVisible }}>
@@ -118,7 +127,7 @@ const Navbar = () => {
               
               <BlogsMenu />
               
-              <NavLink href="/#faq-section" onClick={scrollToFAQ}>FAQs</NavLink>
+              <NavLink href="/faq">FAQs</NavLink>
             </div>
 
             {/* Register Button - Desktop */}

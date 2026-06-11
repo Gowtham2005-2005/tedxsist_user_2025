@@ -119,6 +119,14 @@ export const Timeline = () => {
     {
       title: "Upcoming",
       content: {
+        headingHighlight: "Opportunity in the Unknown",
+        heading: ": Building the Unmasked",
+        description: "In every uncertainty, there is a hidden opening to rethink, rebuild, and rediscover possibility. Opportunity in the Unknown invites us to step beyond predictability and engage with ideas that challenge what we assume. Building the Unmasked explores what happens when individuals, systems, and communities reveal their most honest potential. Through bold conversations and fresh perspectives, TEDxSIST 2026 aims to turn ambiguity into action. This edition celebrates courage, clarity, and the power of shaping the future before it fully reveals itself."
+      }
+    },
+    {
+      title: "2025",
+      content: {
         headingHighlight: "Resilience",
         heading: " – Exploring Human Experiences",
         description: "The upcoming TEDxSIST event will focus on resilience—the ability to overcome challenges and emerge stronger. This theme explores various aspects of resilience in human experiences, including personal growth, community solidarity, innovation, and creativity. Join us as we hear inspiring talks from individuals who embody resilience and share transformative ideas that drive change."

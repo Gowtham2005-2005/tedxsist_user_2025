@@ -6,7 +6,6 @@ import { signInWithPopup } from "firebase/auth"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
 import { Checkbox } from "@/components/ui/checkbox"
 
 export function LoginForm({
@@ -39,7 +38,7 @@ export function LoginForm({
               <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Register Here!!</h1>
                 <p className="text-balance text-muted-foreground">
-                  Register for TEDxSIST 2025
+                  Register for TEDxSIST 2026
                 </p>
               </div>
               
@@ -92,16 +91,16 @@ export function LoginForm({
               </Button>
               </div>
               <div className="text-center text-sm text-muted-foreground">
-                © TEDxSIST 2025
+                © TEDxSIST 2026
               </div>
             </div>
           </form>
           <div className="relative hidden bg-muted md:block">
-            <Image
-              src="/placeholder.svg"
-              alt="Image"
-              fill
-              className="object-cover dark:brightness-[0.2] dark:grayscale"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1fc6d1323b248916ccdc0358050cf6f2ba7a2433.jpg"
+              alt="TEDxSIST 2026 Registration"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         </CardContent>

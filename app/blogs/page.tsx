@@ -35,9 +35,11 @@ export default function BlogBentoGrid() {
             <BentoGridItem
               title={blogEntries[0][1].title}
               description={blogEntries[0][1].description}
-              header={<div className="relative w-full h-48 md:h-full min-h-[12rem]">
-                <Image src={blogEntries[0][1].image} alt={blogEntries[0][1].title} fill className="object-cover rounded-xl" />
-              </div>}
+              header={
+                <div className="relative w-full h-48 md:h-full min-h-[12rem] rounded-xl overflow-hidden">
+                  <BlogImage src={blogEntries[0][1].image} alt={blogEntries[0][1].title} />
+                </div>
+              }
               className="md:col-span-3"
               icon="Article"
               name={blogEntries[0][1].author.name}
@@ -67,9 +69,11 @@ export default function BlogBentoGrid() {
               key={i}
               title={blog.title}
               description={blog.description}
-              header={<div className="relative w-full h-48 min-h-[10rem]">
-                <Image src={blog.image} alt={blog.title} fill className="object-cover rounded-xl" />
-              </div>}
+              header={
+                <div className="relative w-full h-48 min-h-[10rem] rounded-xl overflow-hidden">
+                  <BlogImage src={blog.image} alt={blog.title} />
+                </div>
+              }
               className={`${blog.className} min-h-[20rem] transition-all duration-300 ${
                 blog.description.length > 100 ? 'md:min-h-[24rem]' : ''
               }`}
@@ -86,4 +90,27 @@ export default function BlogBentoGrid() {
   );
 }
 
-
+/** Card thumbnail — external URLs use <img>, local paths use Next.js Image fill */
+const BlogImage = ({ src, alt }: { src: string; alt: string }) => {
+  const isExternal = src && src.startsWith('http');
+  if (isExternal) {
+    return (
+      <>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+      </>
+    );
+  }
+  if (src && src !== '/placeholder.svg') {
+    return (
+      <>
+        <Image src={src} alt={alt} fill className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+      </>
+    );
+  }
+  return (
+    <div className="w-full h-full bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black" />
+  );
+};

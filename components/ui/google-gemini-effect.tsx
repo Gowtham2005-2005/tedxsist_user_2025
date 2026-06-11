@@ -7,6 +7,7 @@ import { Spotlight } from "./spotlight-new";
 import { ArrowRight } from "lucide-react";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { useRouter } from "next/navigation";
+import { REGISTRATION_OPEN, REGISTRATION_DATE } from "@/lib/registration-config";
 
 interface GoogleGeminiEffectProps {
   pathLengths: MotionValue<number>[];
@@ -32,6 +33,15 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
 }) => {
   const router = useRouter();
 
+  const handleCtaClick = REGISTRATION_OPEN ? () => router.push("/register") : () => {};
+  const ctaLabel = REGISTRATION_OPEN ? "Register" : "Coming Soon";
+
+  const heroCaption = REGISTRATION_OPEN
+    ? "Registrations are Open! ✨"
+    : REGISTRATION_DATE
+    ? `Registrations open on ${REGISTRATION_DATE} ✨`
+    : "Registrations Coming Soon ✨";
+
   return (
     <div className={cn("sticky top-20", className)}>
       <div className={cn("relative w-full min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[890px]", className)}>
@@ -48,7 +58,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               }}
               className="text-base sm:text-lg md:text-2xl lg:text-xl text-neutral-300 dark:text-neutral-300"
             >
-              Registrations Coming Soon! ✨
+              {heroCaption}
             </motion.p>
 
             <motion.h1
@@ -102,10 +112,10 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               containerClassName="rounded-[60px]"
               as="button"
               className="group  lative flex items-center gap-1 rounded-[60px] bg-black/90 px-6 sm:px-6 md:px-6 lg:px-12 py-1 sm:py-2.5 md:py-2  text-primary backdrop-blur-sm transition-all duration-300 hover:bg-[#EB0028] hover:text-white hover:border-primary hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] border border-[#EB0028]"
-              onClick={() => router.push("/register")}
+              onClick={handleCtaClick}
             >
               <div className="flex items-center gap-2">
-                <span className="relative z-10 text-xl sm:text-md md:text-2xl lg:text-xl font-bold">Register</span>
+                <span className="relative z-10 text-xl sm:text-md md:text-2xl lg:text-xl font-bold">{ctaLabel}</span>
                 <ArrowRight className="font-bold relative z-10 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 transition-transform duration-300 group-hover:translate-x-1" />
                 <div className="absolute inset-0 rounded-full border border-white/10" />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/[0.03] to-transparent" />

@@ -1,35 +1,45 @@
-
 "use client";
 
-import { Banner } from "flowbite-react";
-import { HiArrowRight, HiX } from "react-icons/hi";
-import { MdPercent } from "react-icons/md";
-//this is example must work on this code
-export function Component() {
+import { useState } from "react";
+import Link from "next/link";
+import { REGISTRATION_OPEN, REGISTRATION_DATE } from "@/lib/registration-config";
+
+export function TopBanner() {
+  const [dismissed, setDismissed] = useState(false);
+
+  if (dismissed) return null;
+
   return (
-    <Banner>
-      <div className="flex w-full justify-between border-t border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-        <div className="mx-auto flex items-center">
-          <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-            <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 p-1 dark:bg-gray-600">
-              <MdPercent className="h-4 w-4" />
-            </span>
-            <span className="[&_p]:inline">
-              Get 5% commision per sale&nbsp;
-              <a
-                href="https://flowbite.com"
-                className="ml-0 flex items-center text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-500 md:ml-1 md:inline-flex"
-              >
-                Become a partner
-                <HiArrowRight className="ml-2" />
-              </a>
-            </span>
-          </p>
-        </div>
-        <Banner.CollapseButton color="gray" className="border-0 bg-transparent text-gray-500 dark:text-gray-400">
-          <HiX className="h-4 w-4" />
-        </Banner.CollapseButton>
-      </div>
-    </Banner>
+    <div className="relative w-full bg-neutral-900 border-b border-neutral-800 px-4 py-2.5 flex items-center justify-center text-sm">
+      {REGISTRATION_OPEN ? (
+        <p className="flex items-center gap-2 text-neutral-200">
+          <span className="inline-block h-2 w-2 rounded-full bg-red-600 animate-pulse" />
+          <span className="font-medium text-white">Registration Open</span>
+          <span className="text-neutral-400">—</span>
+          <Link
+            href="/register"
+            className="font-semibold text-red-500 hover:text-red-400 underline underline-offset-2 transition-colors"
+          >
+            Register Now →
+          </Link>
+        </p>
+      ) : (
+        <p className="flex items-center gap-2 text-neutral-300">
+          <span className="inline-block h-2 w-2 rounded-full bg-red-600" />
+          <span className="font-medium text-white">Registrations Coming Soon</span>
+          {REGISTRATION_DATE && (
+            <span className="text-neutral-400 text-xs">— Opens {REGISTRATION_DATE}</span>
+          )}
+        </p>
+      )}
+
+      <button
+        onClick={() => setDismissed(true)}
+        aria-label="Dismiss banner"
+        className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-neutral-200 transition-colors p-1 rounded"
+      >
+        <span aria-hidden="true" className="text-base leading-none">×</span>
+      </button>
+    </div>
   );
 }

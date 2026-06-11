@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useState } from "react";
+
 interface BlogHeaderProps {
   image: string
   badge: { icon: string; text: string }
@@ -12,37 +15,66 @@ interface BlogHeaderProps {
 }
 
 export default function BlogHeader({ image, badge, title, author, description, timeAgo }: BlogHeaderProps) {
-   const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const words = description.split(" ");
   const isLong = words.length > 15;
-  return (
-    <div className="mb-8">
-      <Image src={image || "/placeholder.svg"} alt={title} width={1200} height={450} className="rounded-2xl mb-4" />
-      <Badge variant="outline" className="rounded-full mb-2">
-        {badge.icon} {badge.text}
-      </Badge>
-      <h1 className="text-3xl font-bold mb-2">{title}</h1>
-      <div className="flex items-center mb-2">
-        <Avatar className="mr-2">
-          <AvatarImage src={author.avatar} alt={author.name} />
-          <AvatarFallback>{author.name[0]}</AvatarFallback>
-        </Avatar>
-        <span className="font-medium">{author.name}</span>
-      </div>
-          <p className="text-muted-foreground mb-2">
-      {isLong && !expanded ? words.slice(0, 15).join(" ") + "..." : description}{" "}
-      {isLong && (
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="text-primary font-medium inline"
-        >
-          {expanded ? "Read less" : "Read more"}
-        </button>
-      )}
-    </p>
+  const isExternal = image.startsWith("http");
 
-      <p className="text-sm text-muted-foreground">{timeAgo}</p>
+  return (
+    <div className="mb-10">
+      {/* Hero image with dark gradient overlay */}
+      <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden mb-6">
+        {isExternal ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <Image
+            src={image || "/placeholder.svg"}
+            alt={title}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+        {/* Badge + title + author overlaid at the bottom */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+          <Badge variant="outline" className="rounded-full mb-3 border-white/40 text-white bg-white/10 backdrop-blur-sm">
+            {badge.icon} {badge.text}
+          </Badge>
+          <h1 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight drop-shadow">
+            {title}
+          </h1>
+          <div className="flex items-center gap-2">
+            <Avatar className="h-7 w-7 border border-white/30">
+              <AvatarImage src={author.avatar} alt={author.name} />
+              <AvatarFallback className="text-xs">{author.name[0]}</AvatarFallback>
+            </Avatar>
+            <span className="text-sm text-white/90 font-medium">{author.name}</span>
+            <span className="text-white/50 text-xs">·</span>
+            <span className="text-xs text-white/60">{timeAgo}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Description below hero */}
+      <p className="text-muted-foreground text-base leading-relaxed">
+        {isLong && !expanded ? words.slice(0, 15).join(" ") + "..." : description}{" "}
+        {isLong && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="text-primary font-medium inline"
+          >
+            {expanded ? "Read less" : "Read more"}
+          </button>
+        )}
+      </p>
     </div>
   )
 }
-

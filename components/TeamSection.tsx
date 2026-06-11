@@ -14,14 +14,20 @@ interface Testimonial {
   src: string;
 }
 
-type TeamName = "2025 Team" | "Organisers" | "Curation Team" | "Finance Team" | "Operations Team" | "Production Team" | "Tech Team";
+type TeamName = "2026 Team" | "Organisers" | "Curation Team" | "Finance Team" | "Operations Team" | "Production Team" | "Tech Team";
 
 const teams: TeamName[] = [
-  "2025 Team",
+  "2026 Team",
+  "Organisers",
+  "Curation Team",
+  "Finance Team",
+  "Operations Team",
+  "Production Team",
+  "Tech Team",
 ];
 
 const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
-  "2025 Team": [
+  "2026 Team": [
     {
       id: 0,
       quote: "Team details coming soon...",
@@ -262,10 +268,40 @@ interface Tab {
   content: React.ReactNode;
 }
 
+const renderTeamMembers = (members: Testimonial[]): Testimonial[] => {
+  return members.map((m) =>
+    m.name.includes("TBA") ||
+    m.designation.includes("TBA") ||
+    m.quote.toLowerCase().includes("coming soon")
+      ? {
+          id: m.id,
+          quote: "Team details for this edition will be announced shortly.",
+          name: "—",
+          designation: "—",
+          src: "/sample.png",
+        }
+      : m
+  );
+};
+
 const tabs = teams.map((team) => ({
   title: team,
   value: team,
-  content: <AnimatedTestimonials testimonials={testimonialsByTeam[team]} />,
+  content: (
+    <div>
+      {team === "2026 Team" && (
+        <p className="text-center text-gray-500 text-sm mb-6 tracking-widest uppercase">
+          2026 Edition
+        </p>
+      )}
+      {team === "Organisers" && (
+        <p className="text-center text-gray-500 text-sm mb-6 tracking-widest uppercase">
+          2025 Edition
+        </p>
+      )}
+      <AnimatedTestimonials testimonials={renderTeamMembers(testimonialsByTeam[team])} />
+    </div>
+  ),
 }));
 
 interface TabsProps {

@@ -22,17 +22,17 @@ export default function StickyScroll() {
     },
     {
       title: <>Our <span className="text-primary">Vision & Impact</span></>,
-      description: "TEDxSIST is not just about hosting an event—it's about inspiring lasting change. Since its inception, TEDxSIST has become a platform for sharing transformative ideas that drive change in the community. Through thought-provoking talks, collaborations, and shared experiences, TEDxSIST aims to foster a space where innovation, resilience, and action are nurtured.",
+      description: "TEDxSIST is not just about hosting an event—it's about inspiring lasting change. Since its inception, TEDxSIST has become a platform for sharing transformative ideas that drive change in the community. Through thought-provoking talks, collaborations, and shared experiences, TEDxSIST aims to foster a space where innovation, creativity, and action are nurtured.",
       image: "/bg.png?height=400&width=600",
     },
     {
-      title: <>Theme: <span className="text-primary">Resilience</span></>,
-      description: "At TEDxSIST 2025, we believe in the power of resilience—the ability to adapt, persevere and emerge stronger through challenges. This year's theme, 'Resilience: Exploring the Human Experiences' highlights the inspiring stories of people who have overcome difficulties and shaped their own futures. Our speakers will share their powerful experience and ideas that encourage action, spark new thoughts and inspire curiosity in every listener.",
+      title: <>Theme: <span className="text-primary">Opportunity in the Unknown</span></>,
+      description: "In every uncertainty, there is a hidden opening to rethink, rebuild, and rediscover possibility. Opportunity in the Unknown invites us to step beyond predictability and engage with ideas that challenge what we assume. Building the Unmasked explores what happens when individuals, systems, and communities reveal their most honest potential. Through bold conversations and fresh perspectives, TEDxSIST 2026 aims to turn ambiguity into action. This edition celebrates courage, clarity, and the power of shaping the future before it fully reveals itself.",
       image: "/bg.png?height=400&width=600",
     },
     {
       title: <>Why Attend<span className="text-primary"> TEDx</span>SIST</>,
-      description: "Joining us where we run you through experiences of resilience filled with inspiration will connect passionate individuals. Imagine being part of a global community, where every conversation and every talk has the potential to ignite action and change – not just in your own life, but in the world around you. It's a fuel to your next big step towards making a difference.",
+      description: "Join us for a journey of discovery and curiosity, where every talk sparks new connections and bold conversations. Imagine being part of a global community where every idea has the potential to ignite action and change — not just in your own life, but in the world around you. It's a catalyst for future-building and your next big step towards making a difference.",
       image: "/bg.png?height=400&width=600",
     },
   ];
@@ -53,6 +53,11 @@ export default function StickyScroll() {
     return () => unsubscribe();
   }, [scrollYProgress, totalSections]);
 
+  const titleVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.4, 0, 0.2, 1] } },
+  };
+
   return (
     <div ref={containerRef} className="h-[200vh] relative bg-black">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
@@ -71,14 +76,26 @@ export default function StickyScroll() {
                 transition={{ duration: 0.5 }}
                 className="max-w-xl absolute inset-12 flex flex-col justify-center"
               >
-                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-4xl md:text-4xl font-bold mb-4 text-white"
-                >
-                  {section.title}
-                </motion.h2>
+                {index === 2 ? (
+                  <motion.h2
+                    variants={titleVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    className="text-4xl md:text-4xl font-bold mb-4 text-white"
+                  >
+                    {section.title}
+                  </motion.h2>
+                ) : (
+                  <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="text-4xl md:text-4xl font-bold mb-4 text-white"
+                  >
+                    {section.title}
+                  </motion.h2>
+                )}
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

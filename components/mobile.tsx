@@ -27,19 +27,19 @@ const TEDxSections = () => {
       image: "/bg.png?height=400&width=600",
     },
     {
-      title: "Theme: Resilience",
-      description: "At TEDxSIST 2025, we believe in the power of resilience—the ability to adapt, persevere and emerge stronger through challenges. This year's theme, 'Resilience: Exploring the Human Experiences' highlights the inspiring stories of people who have overcome difficulties and shaped their own futures.",
+      title: "Theme: Opportunity in the Unknown",
+      description: "In every uncertainty, there is a hidden opening to rethink, rebuild, and rediscover possibility. Opportunity in the Unknown invites us to step beyond predictability and engage with ideas that challenge what we assume. Building the Unmasked explores what happens when individuals, systems, and communities reveal their most honest potential. Through bold conversations and fresh perspectives, TEDxSIST 2026 aims to turn ambiguity into action. This edition celebrates courage, clarity, and the power of shaping the future before it fully reveals itself.",
       image: "/bg.png?height=400&width=600",
     },
     {
       title: "Our Vision & Impact",
-      description: "TEDxSIST is not just about hosting an event—it's about inspiring lasting change. Since its inception, TEDxSIST has become a platform for sharing transformative ideas that drive change in the community. Through thought-provoking talks, collaborations, and shared experiences, TEDxSIST aims to foster a space where innovation, resilience, and action are nurtured.",
+      description: "TEDxSIST is not just about hosting an event—it's about inspiring lasting change. Since its inception, TEDxSIST has become a platform for sharing transformative ideas that drive change in the community. Through thought-provoking talks, collaborations, and shared experiences, TEDxSIST aims to foster a space where innovation, curiosity, and action are nurtured.",
       image: "/bg.png?height=400&width=600",
     },
     
     {
       title: "Why Attend TEDxSIST",
-      description: "Joining us where we run you through experiences of resilience filled with inspiration will connect passionate individuals. Imagine being part of a global community, where every conversation and every talk has the potential to ignite action and change – not just in your own life, but in the world around you.",
+      description: "Join us for an experience driven by discovery and curiosity — where bold ideas spark meaningful conversations. Be part of a community of passionate individuals committed to courage and future-building. Every talk has the potential to ignite action and change, not just in your own life, but in the world around you.",
       image: "/bg.png?height=400&width=600",
     },
   ];

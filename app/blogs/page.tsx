@@ -34,7 +34,7 @@ export default function BlogBentoGrid() {
             <BentoGridItem
               title={blogEntries[0][1].title}
               description={blogEntries[0][1].description}
-              header={<Skeleton />}
+              header={<BlogImage src={blogEntries[0][1].image} alt={blogEntries[0][1].title} />}
               className="md:col-span-3"
               icon="Article"
               name={blogEntries[0][1].author.name}
@@ -63,7 +63,7 @@ export default function BlogBentoGrid() {
               key={i}
               title={blog.title}
               description={blog.description}
-              header={<Skeleton />}
+              header={<BlogImage src={blog.image} alt={blog.title} />}
               className={`${blog.className} min-h-[20rem] transition-all duration-300 ${
                 blog.description.length > 100 ? 'md:min-h-[24rem]' : ''
               }`}
@@ -79,6 +79,23 @@ export default function BlogBentoGrid() {
   );
 }
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black"></div>
-);
+/** Card thumbnail — shows the real image if available, falls back to the dot skeleton */
+const BlogImage = ({ src, alt }: { src: string; alt: string }) => {
+  const isReal = src && src !== '/placeholder.svg';
+  if (isReal) {
+    return (
+      <div className="relative flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+      </div>
+    );
+  }
+  return (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black" />
+  );
+};

@@ -12,8 +12,17 @@ interface Testimonial {
   src: string;
 }
 
-type Year = 2025 | 2023 | 2022;
-const years = [2025, 2023, 2022] as const;
+type Year = 2026 | 2025 | 2023 | 2022;
+const years = [2026, 2025, 2023, 2022] as const;
+
+const testimonials2026: Testimonial[] = [
+  {
+    quote: "The 2026 speaker lineup will be revealed soon. Stay tuned for updates.",
+    name: "TEDxSIST 2026",
+    designation: "Coming Soon",
+    src: "/sample.png",
+  },
+]
 
 const testimonials2025: Testimonial[] = [
   {
@@ -98,17 +107,34 @@ const testimonials2022: Testimonial[] = [
   },
 ]
 
+const testimonialsByYear: Record<Year, Testimonial[]> = {
+  2026: testimonials2026,
+  2025: testimonials2025,
+  2023: testimonials2023,
+  2022: testimonials2022,
+}
+
+const renderTestimonials = (year: Year): Testimonial[] => {
+  const raw = testimonialsByYear[year];
+  if (year !== 2025) return raw;
+  return raw.map((t) =>
+    t.name.includes("TBA") || t.designation.includes("TBA")
+      ? {
+          quote: "Speaker details from the 2025 edition will be announced shortly.",
+          name: "TEDxSIST 2025",
+          designation: "Previous Edition",
+          src: "/sample.png",
+        }
+      : t
+  );
+};
+
 const createYearContent = (year: Year) => {
-  const testimonialsByYear: Record<Year, Testimonial[]> = {
-    2025: testimonials2025,
-    2023: testimonials2023,
-    2022: testimonials2022,
-  }
-  return <AnimatedTestimonials testimonials={testimonialsByYear[year]} />
+  return <AnimatedTestimonials testimonials={renderTestimonials(year)} />
 }
 
 const tabs = years.map(year => ({
-  title: year.toString(),
+  title: year === 2025 ? "2025 (Previous Edition)" : year.toString(),
   value: year.toString(),
   content: createYearContent(year as Year)
 }))

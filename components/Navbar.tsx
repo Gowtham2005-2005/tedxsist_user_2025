@@ -327,11 +327,11 @@ const BlogsMenu = () => {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    href="/blogs/tedx-sist-2025"
+                    href="/blogs/tedx-sist-2026-opportunity-in-the-unknown"
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium text-foreground">
-                      TEDxSIST 2025: Resilience
+                      TEDxSIST 2026: Opportunity in the Unknown
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Featured Blog
@@ -339,14 +339,14 @@ const BlogsMenu = () => {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/blogs/magic-in-quiet-moments" title="Magic in quiet moments: Behind the scenes journey">
+              <ListItem href="/blogs/magic-in-quiet-moments-2026" title="Magic in quiet moments: Behind the scenes journey">
                 Behind the Scenes
               </ListItem>
-              <ListItem href="/blogs/a-story-of-the-grit-and-sweat-behind-resilience-a-case-study-of-our-local-community" title="A Story of The Grit and Sweat Behind Resilience">
-                A Case Study
+              <ListItem href="/blogs/building-the-unmasked-voices-of-courage" title="Building the Unmasked: Voices of Courage">
+                Community &amp; Courage
               </ListItem>
-              <ListItem href="/blogs/its-tedxsist-time-are-you-ready-to-make-the-most-of-it" title="It’s TEDx SIST Time! Are You Ready to Make the Most of It?">
-                Experience TEDxSIST 2025
+              <ListItem href="/blogs/tedxsist-2026-are-you-ready-to-step-into-the-unknown" title="TEDxSIST 2026 Is Here: Are You Ready?">
+                Step Into the Unknown
               </ListItem>
             </ul>
           </NavigationMenuContent>

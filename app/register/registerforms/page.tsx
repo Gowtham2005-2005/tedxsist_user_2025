@@ -10,13 +10,6 @@ import { useToast } from "@/hooks/use-toast";
 import { db } from "@/firebase/firebase-client"; // Ensure Firestore is properly configured
 import { doc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
-import { AlertCircle } from "lucide-react"
- 
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "@/components/ui/alert"
 export default function RegisterFormsPage() {
   const { toast } = useToast();
   const { user } = useAuth();
@@ -83,7 +76,7 @@ export default function RegisterFormsPage() {
     if (response.status === 409) { // Handle "already registered" case
       toast({
         title: "Already Registered",
-        description: "You have already registered for TEDxSIST 2025.",
+        description: "You have already registered for TEDxSIST 2026.",
         variant: "destructive",
       });
       return;
@@ -133,7 +126,7 @@ if (isRegistered === null) {
       <ProtectedRoute>
       <div className="flex items-center justify-center min-h-screen px-4">
   <p className="text-md sm:text-xl md:text-xl font-semibold text-center">
-    You have registered for <span className="text-primary">TEDx</span>SIST 2025. Check your inbox and spams.
+    You have registered for <span className="text-primary">TEDx</span>SIST 2026. Check your inbox and spams.
   </p>
 </div>
 
@@ -144,17 +137,8 @@ if (isRegistered === null) {
     <ProtectedRoute>
       <div className="max-w-4xl w-full mx-auto p-4 md:p-8">
         <h2 className="font-bold text-5xl text-neutral-200 text-center mb-8">
-          <span className="text-primary">TEDx</span>SIST 2025 Registration
+          <span className="text-primary">TEDx</span>SIST 2026 Registration
         </h2>
-       <div className="mt-16 mb-4">
-  <Alert variant="destructive">
-    <AlertCircle className="h-4 w-4" />
-    <AlertTitle>ATTENTION</AlertTitle>
-    <AlertDescription>
-      Some departments have CAE on the event day (Feb 24, 2025). Please check your schedule, as the event begins at 10 AM.
-    </AlertDescription>
-  </Alert>
-</div>
 
         <form className="space-y-8" onSubmit={handleSubmit}>
           {/* Personal Details Card */}

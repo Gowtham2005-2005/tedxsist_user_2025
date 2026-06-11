@@ -72,7 +72,7 @@ export function FAQ2() {
       answer: "TEDxSIST is an independently organized event that brings together visionary speakers to share ideas worth spreading. Founded in 2022, TEDxSIST provides a platform for passionate minds to ignite new perspectives, inspire change, and encourage innovation. It is driven by the belief that transformative ideas can shape attitudes, improve lives, and ultimately make a lasting impact on the world."
     },
     {
-      question: "How can I attend TEDxSIST 2025?",
+      question: "How can I attend TEDxSIST 2026?",
       answer: "To attend TEDxSIST, interested attendees will need to fill out a registration form with basic information and answers to theme or TEDx-related questions. Based on your responses, we will carefully screen applications, and shortlisted attendees will be invited to attend the event. Make sure your responses reflect your interest in the theme and your enthusiasm for the TEDx experience!"
     },
     {
@@ -134,7 +134,7 @@ export function FAQ2() {
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
               >
-                Get answers to common questions about <span className="font-bold text-[#EB0028]">TEDx</span>SIST 2025. Can&apos;t find what you&apos;re looking for? Reach out to our team directly.
+                Get answers to common questions about <span className="font-bold text-[#EB0028]">TEDx</span>SIST 2026. Can&apos;t find what you&apos;re looking for? Reach out to our team directly.
               </motion.p>
             </div>
             <motion.div 

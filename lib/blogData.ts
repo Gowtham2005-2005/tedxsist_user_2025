@@ -27,156 +27,139 @@ interface BlogPost {
 }
 
 export const blogData: Record<string, BlogPost> = {
-  'tedx-sist-2025': {
-    image: "/placeholder.svg",
+  'tedx-sist-2026-opportunity-in-the-unknown': {
+    image: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ef0b544d85f652b9d9a3ca264d2ed7def1a2e102.jpg",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-2",
-    title: "TEDxSIST 2025: Resilience",
-    author: { 
-      name: "Neeharika and Team", 
-      avatar: "/placeholder.svg" 
+    title: "TEDxSIST 2026: Opportunity in the Unknown",
+    author: {
+      name: "Neeharika and Team",
+      avatar: "/placeholder.svg"
     },
-    description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
-    timeAgo: formatRelativeTime(1739356812),
+    description: "TEDxSIST 2026 invites us to look beyond certainty and discover what becomes possible when we embrace the unfamiliar. With bold ideas, honest conversations, and future-facing perspectives, this edition explores how uncertainty can become a space for courage, creativity, and meaningful transformation.",
+    timeAgo: formatRelativeTime(1749856812),
     sections: [
-      { 
-        title: "Introduction", 
-        content: "Welcome to the TEDx community, where ideas go beyond limits and spark significant change. TEDx events celebrate innovation, storytelling, and human connection—uniting visionaries and change-makers worldwide. Here, curiosity flourishes, perspectives come together, and fresh possibilities arise. Whether you\'\re looking for inspiration, questioning the norm, or envisioning the future, you're invited to uncover ideas that can transform our world." 
-      },
-      { 
-        title: "The purpose of TEDx", 
-        content: "At TED, the global mission focuses on discovering and sharing impactful, original ideas within local communities while amplifying them globally. This goal is achieved through organizing local events that highlight diverse perspectives and ignite meaningful discussions, effectively encapsulating the essence of TED's motto, \"\ideas worth spreading,\"\.\nAt TEDxSIST, we have cultivated that spark, elevating the expressions of essential concepts articulated by students, innovators, and thought leaders.\nThis year\'\s TEDxSIST is poised to be our most exhilarating to date, providing a platform for the emergence of ideas that challenge conventional thinking." 
+      {
+        title: "Introduction",
+        content: "There are moments in every journey when the path ahead is not fully visible. We do not always have complete answers, clear plans, or guaranteed outcomes. Yet it is often in these very moments of uncertainty that new possibilities begin to take shape. TEDxSIST 2026 is built around that idea."
       },
       {
-        title:"What is TEDx?",
-        content: "TEDx is an independently organised TED event by local communities and they promote TED\'\s mission of spreading ideas. x = independently organized event Members from a community obtain a license from TED to host their own TED events and speakers are invited to speak for 18 minutes or less. A TEDx event is centered around a theme and it fosters thinking, innovation and change. The goal of a TEDx event is to spark conversation, connection and community. Unlike larger conferences, TEDx events are focused and streamlined— there are no panels, breakout sessions, or multiple tracks—just a series of impactful talks that ignite curiosity and inspire action.\n\nThese TEDx events are then made globally available where they are shared to people all across the world in the TEDx official channel.\n\nTEDxSIST is one of the most eagerly awaited events on campus. TEDxSIST assembles visionary speakers, engaging audiences and fosters change both locally and globally."
+        title: "Opportunity in the Unknown",
+        content: "This year's theme, Opportunity in the Unknown, invites us to look at uncertainty not as something to fear, but as something to explore. The unknown can feel uncomfortable because it asks us to move without complete assurance. It challenges us to trust curiosity, ask better questions, and stay open to outcomes we may not yet understand. But it is also where imagination expands, courage is tested, and growth begins.\n\nAt TEDxSIST 2026, we want to create a space where ideas do more than inform. We want them to shift perspective. We want them to uncover possibilities hidden beneath routine thinking. We want them to remind us that not all meaningful progress begins with clarity—sometimes it begins with a willingness to step forward even when the future is still taking shape."
       },
       {
-        title:"A Glimpse",
-        content:"TEDxSIST 2022: Merging Minds - The League of Castaways\nTEDxSIST 2022 fostered a unique space for diverse thinkers, highlighting humanity's complexity. The theme, Merging Minds: The League of Castaways, encouraged reflection on times we feel lost, akin to castaways navigating unique thoughts while seeking authenticity.\nThis theme echoed the journey of self-exploration, shifting from seeking external approval to valuing our mental health. The event recognized this vital change, moving from avoiding risks to embracing joy, laughter, memories, knowledge, and empathy.TEDxSIST 2022 also addressed societal issues: 'nerds' and 'cool' individuals create stereotypes that stifle idea expression. The event aimed to break these barriers, fostering an environment where vibrant minds connect, allowing each participant to be a hero in their story, and welcoming “mistakes” without fear."
+        title: "Building the Unmasked",
+        content: "Our supporting idea for this edition, Building the Unmasked, deepens this theme. It speaks to what happens when people, systems, and communities begin to move beyond appearances and reveal what is real, unfinished, vulnerable, and full of potential. To build the unmasked is to create from a place of honesty. It means looking beyond polished surfaces and choosing authenticity, insight, and intention.\n\nThis year's edition is a call to thinkers, creators, dreamers, builders, and changemakers. It is for those who are willing to engage with uncertainty not as a limitation, but as an opening. Some of the most powerful ideas of our time were not born from certainty. They emerged from difficult questions, incomplete maps, and moments when someone decided that not knowing everything was not a reason to stop."
       },
       {
-        title:"TEDxSIST 2023: Exploring the Uncharted Reality",
-        content:"TEDxSIST 2023 extended an invitation to attendees to engage in a profound journey of exploration, centered on the intellectually stimulating theme of \"Uncharted Reality.\" This theme encouraged participants to critically examine the prevailing norms, challenge established assumptions, and pursue novel frontiers in both their personal and collective endeavours. It served as a call to reflect on individual and societal narratives, empowering individuals to make informed decisions and to construct a more promising future through the prism of their historical experiences.\nThe event convened visionary speakers, each of whom presented innovative perspectives and motivating insights that expanded the boundaries of conventional thought and illuminated the previously uncharted dimensions of our collective reality.Broadening Horizons and Reimagining Opportunities\n\nThis year, we warmly invite you to embark on a journey that challenges the very limits of what is possible. Our theme, 'Resilience,' serves as a powerful impetus, encouraging you to rethink and expand upon all preconceived notions surrounding innovation and progress. We believe that by embracing resilience, we can unlock new paths of creativity and progress that transcend traditional boundaries.\"\n\nResilience isn\'\ t just about bouncing back from setbacks; it\'\s about the amazing strength to adapt, grow, and truly thrive when faced with challenges. It\'\s that inner power that helps us stay grounded and focused on our purpose, even during life\'\s toughest moments.\n\nWe build resilience by embracing uncertainty, navigating through chaos, and coming out stronger after each experience. It\'\s that unwavering belief that, no matter how intense the storm, we can turn our struggles into stepping stones towards a brighter, more empowered future."
+        title: "The Spirit of 2026",
+        content: "TEDxSIST has always stood for ideas worth spreading, but every edition also carries a deeper emotional rhythm. The spirit of 2026 is one of possibility. We are interested in the ideas that appear when comfort zones are challenged. We are drawn to the voices that ask what more can be discovered, what assumptions need to be re-examined, and what futures can be built when we are brave enough to think differently.\n\nThis edition is not about pretending uncertainty is easy. It is about recognizing that uncertainty is real—and that within it, there is room for courage, innovation, empathy, and change. When we stop demanding immediate certainty from every step, we allow room for exploration. That is where fresh thinking begins."
+      },
+      {
+        title: "An Invitation",
+        content: "TEDxSIST 2026 will bring together stories and perspectives that reflect this energy. Through meaningful talks, conversations, and shared experiences, we hope to create a space where people leave not only inspired, but transformed in the way they see possibility. We want attendees to walk away with stronger questions, deeper clarity, and a renewed willingness to engage with what lies ahead.\n\nOpportunity does not always arrive with certainty. Sometimes it appears quietly, hidden inside complexity, discomfort, or transition. Sometimes it asks us to become more honest, more curious, and more courageous before it reveals its full shape. TEDxSIST 2026 is an invitation to meet that moment.\n\nAnd perhaps that is where the most important ideas begin—in the unknown, where what we choose to build next truly matters."
       }
-      
     ]
   },
-  'magic-in-quiet-moments': {
-    image: "/placeholder.svg",
+  'magic-in-quiet-moments-2026': {
+    image: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/29c2f092473e49afad8e0cbbdedf715e86722e6c.jpg",
     badge: { icon: "✨", text: "Behind the Scenes" },
-    title: "Magic in quiet moments: Behind the scenes journey",
     className: "md:col-span-1",
-    author: { 
-      name: "Aakriti Bose", 
-      avatar: "/placeholder.svg" 
+    title: "Magic in quiet moments: Behind the scenes journey",
+    author: {
+      name: "Aakriti Bose",
+      avatar: "/placeholder.svg"
     },
-    description: "Delving into this year's theme and its significance. A deeper look at how we crafted meaningful experiences through thoughtful design and careful attention to detail.",
-    timeAgo: formatRelativeTime(1739356812),
+    description: "Behind every TEDxSIST experience is a thoughtful process of building meaning through design, collaboration, and intention. This story follows the quieter moments behind TEDxSIST 2026 and how they shape an edition centered on possibility, reflection, and discovery.",
+    timeAgo: formatRelativeTime(1749856812),
     sections: [
-      { 
-        title: "The Core of TEDx", 
-        content: "TEDxSIST would not be possible without its student volunteers. The organising team have dedicated their time and effort to ensure that every single person enjoys the full experience of the TEDxSIST. From late-night planning meetings to securing world-class speakers, the TEDxSIST organizing committee has devoted extensive effort to deliver an event that encapsulates our collective zeal for innovation.Our organizing team comprises passionate students from various academic disciplines, united in their goal to create an event that authentically represents our campus spirit." 
-      },
-      { 
-        title: "M. Murali Sai Ram:", 
-        content: "“We aren't a club, we are a community” - these words perfectly echo Murali's people-centric ethos as the Organizer of TEDxSIST 2025. To Murali, leadership isn't about authority - but about fostering a sense of belonging and shared purpose. He sees his team not as individuals working under him but as collaborators united by a vision, seeking to embody excellence. By trusting the unique strengths of his team and navigating new challenges with his usual capable ease, Murali cultivates a cohesive and motivated community, each member invested in the shared goal of creating a memorable TEDxSIST 2025 experience. His reflective nature enables him to adapt to new challenges on the fly, learning from experience and employ unique strategies to enable TEDxSIST 2025 to become the magical hub of connection that he envisions." 
-      },
-      { 
-        title: "Thaarni S:", 
-        content: "\"Do it scared!\" – that is Thaarni's motto in all things that she does. As the Vice President for TEDxSIST and the co-licensee for TEDxSIST 2025, Thaarni exemplifies the true meaning of resilience. Her unwavering drive and competitive spirit fuel her determination to bring her vision of a magical TEDx event to life, no matter the obstacles in her way. She encourages her team to embrace discomfort, to step into the unknown, and to take on challenges even when they're uncertain. By pushing people to \"do it scared,\" she helps them discover new strengths, fostering a culture of growth and resilience. Thaarni's philosophy behind leadership isn't just merely about achieving goals; it's about teaching others the power of persistence through example." 
-      },
-      { 
-        title: "Mukesh D R:", 
-        content: "A rare mix of creative visionary and grounded team player, our Cluster Coordinator for TEDxSIST 2025 S. D. Mukesh pushes himself to be the best possible that he can be. His knack for crafting creative content and his purpose-driven mindset drive him as he organizes and manages communication across a diverse set of teams with diverse needs. He always puts the needs of his team-mates first, navigating challenges with his trademark flair for adaptability and problem-solving.His skill in balancing and juggling multiple teams, each with their own diverse needs and priorities, makes him an invaluable asset in inspiring TEDxSIST 2025 to be an event that forces people out of their comfort zone, and into an otherworldly space where anything is possible and every idea counts." 
-      },
-      { 
-        title: "Safa:", 
-        content: "As Curation Lead, Safa curates powerful ideas and narratives, ensuring TEDxSIST 2025 sparks curiosity and deep engagement. At the heart of the event, she meticulously shapes its narrative, weaving compelling stories that inspire and challenge perspectives. From selecting thought-provoking speakers to refining talk structures and maintaining thematic coherence, she ensures each element contributes to a seamless and immersive experience. Her dedication to human-centric storytelling pushes creative boundaries, making TEDxSIST 2025 not just an event but a platform for transformative discussions that leave a lasting impact." 
+      {
+        title: "Introduction",
+        content: "When people think of a TEDx event, they often picture the stage, the speakers, the lights, and the applause. They think of the visible moments—the ones that are captured in photographs, remembered in quotes, and shared in conversations long after the event is over. But behind every visible moment is a quieter journey that gives it meaning."
       },
       {
-        title: "Shiney Beulah:",
-        content:"Shiney Beulah is a proactive and enthusiastic multitasker who pushes herself to be the best she can be: all day, every day. As the Logistics and Operations Lead for TEDxSIST 2025, her reputation precedes her - her commitment to taking on a myriad of roles with her classic tireless dedication to her role means that no detail is unaccounted for. At every step of the way, Shiney seeks collaborative ideation - she draws her inspiration from listening to and actively engaging with diverse perspectives and constructive feedback to foster a strong team spirit. Under her worthy guidance, TEDxSIST 2025 will be a truly unforgettable experience, flowing together in mellifluous harmony."
+        title: "The Process Behind 2026",
+        content: "TEDxSIST 2026 is being shaped not only by big ideas, but also by small, intentional choices. Long before the audience arrives and long before a speaker steps onto the stage, an event like this begins in conversations, drafts, revisions, uncertainties, and moments of reflection. It is in these quieter spaces that the real texture of the experience is built.\n\nThis year's edition, Opportunity in the Unknown, has influenced not only what we say, but how we create. The theme asks us to explore the unfamiliar, and that spirit has guided the process behind the scenes as well. Every design decision, planning discussion, and content choice has been approached with one question in mind: how do we create an experience that feels honest, thoughtful, and deeply connected to the theme?"
       },
       {
-        title: "Sai Tejas S:",
-        content:"Meet Sai Tejas, our Finance and Marketing Lead, whose passion for strategy and sharp analytical mind make him an indispensable part of the TEDxSIST 2025 team.Sai wears many hats effortlessly balancing the intricacies of his role: whether he's brainstorming innovative marketing ideas, building partnerships, or handling budgeting. His knack for problem-solving and strategic thinking allows him to tackle challenges head-on while staying focused on delivering impactful results. His ability to combine meticulous planning with creative vision has been instrumental in shaping TEDxSIST 2025 into an extraordinary experience that celebrates innovation and adaptability."
+        title: "Where the Magic Lives",
+        content: "The answer is rarely found in noise. It is often found in the quiet moments.\n\nIt appears in the way a single sentence is rewritten until it feels true. It appears in the search for the right balance between clarity and emotion. It appears in the effort to create spaces that are not only visually appealing, but also meaningful in what they communicate. It appears in the care taken to make sure every detail, however small, contributes to a larger sense of purpose.\n\nBehind the scenes, TEDxSIST is not just an event being assembled. It is a vision being interpreted. Teams collaborate across different responsibilities, each bringing their own perspective into the process. There are discussions about tone, storytelling, flow, identity, timing, and impact. There are experiments, corrections, and moments when something unexpected opens up a better direction than the one originally planned."
       },
       {
-        title: "Dhyani Stark:",
-        content:"Meet our club's “Batman”: Dhyani Stark, the resilient force behind TEDxSIST 2025's production. Well-known for his adaptability, Dhyani faces each challenge head-on - or rather, camera-on. As the Production Lead, his role goes beyond merely overseeing logistics – Dhyani has a sharp eye for ideation and visualization, ensuring that every aspect of the event is in alignment with his creative vision.Dhyani's personal philosophy, “Jack of All Trades, Master of None,” reflects his belief in versatility - combined with his introspective and practical nature, it makes him an indispensable part of the design process. He leaves nothing to chance: he is a self-professed “dictator” when it comes to executing his creative vision. His hands-on approach ensures that no element of TEDxSIST will be left unaccounted for."
+        title: "Quiet Moments, Deep Intention",
+        content: "That is part of what makes this journey special. It reflects the theme it is built around. Working toward something meaningful often requires stepping into spaces where the outcome is not fully defined at the start. Creativity does not always come with a map. Sometimes it emerges through patience, observation, and trust in the process.\n\nThe quiet moments are where this trust is built. They are the moments when a team pauses to ask whether something feels aligned. They are the late adjustments that no one may ever notice directly, but everyone will feel in the final experience. They are the choices that shape atmosphere, emotion, and connection. They may not be loud, but they are powerful.\n\nTEDxSIST 2026 is, in many ways, a celebration of those unseen efforts. It honors the invisible work that supports every visible result. It reminds us that what feels seamless on the surface is often the result of deep intention underneath."
       },
       {
-        title: "Gowtham:",
-        content:"Meet Gowtham – the mastermind behind TEDxSIST's Tech Team! As the Lead, he's the unsung hero ensuring that the metaphorical wires behind the stage of TEDxSIST 2025 run smoothly and seamlessly. Gowtham's role extends far beyond technical expertise; his ability to troubleshoot, adapt, and anticipate issues before they arise is key to maintaining the flawless execution of every event. He thrives in the fast-paced environment of live events, managing everything from sound and visuals to intricate setups that enhance the audience experience. Whether it's incorporating new software or adapting to brand-new technical hurdles, Gowtham's design-thinking approach allows him to approach problems from creative angles, always finding a way to keep things running. His passion for technology and innovation is evident in every decision he makes, continuously elevating TEDxSIST to new heights."
+        title: "Building with Depth",
+        content: "As this edition continues to take shape, we carry forward the belief that meaning is not created only in grand gestures. It is often created in attentiveness, in collaboration, and in the willingness to care deeply about the details.\n\nThere is magic in quiet moments because they allow us to build with depth instead of speed. They allow us to listen before we declare, reflect before we finalize, and create with a stronger sense of purpose. In the journey toward TEDxSIST 2026, those moments matter more than ever.\n\nAnd when the stage lights finally come on, they will illuminate far more than a finished event. They will reveal the result of countless thoughtful moments that happened when no one was watching."
       }
     ]
   },
-  'a-story-of-the-grit-and-sweat-behind-resilience-a-case-study-of-our-local-community': {
-    image: "/placeholder.svg",
+  'building-the-unmasked-voices-of-courage': {
+    image: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/eeec2569c702ceb327c54f5a32b1e034118d09de.jpg",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-1",
-    title: "A Story of The Grit and Sweat Behind Resilience: A Case Study Of Our Local Community",
-    author: { 
-      name: "Catherine Oviya", 
-      avatar: "/placeholder.svg" 
+    title: "Building the Unmasked: Voices of Courage from Our Community",
+    author: {
+      name: "Catherine Oviya",
+      avatar: "/placeholder.svg"
     },
-    description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
-    timeAgo: formatRelativeTime(1739356812),
+    description: "Some of the most powerful ideas emerge when people choose honesty over performance and curiosity over fear. This piece reflects on the voices, experiences, and community spirit that bring the TEDxSIST 2026 vision to life.",
+    timeAgo: formatRelativeTime(1749856812),
     sections: [
-      { 
-        title: "Introduction", 
-        content: "Ah, the beach. The eternal rite of passage for every Chennai-dweller. Like all roads lead to Rome, all roads here in Chennai terminate right at the foot of the Bay of Bengal.We look upon the beach with eager eyes—it is, to many of us, a casual hangout spot where we make memories. We think of sunsets, rippling waves, and burying our toes in the sand as a way to relax.However, that is not the beach I wish to write about today.Today, I wish to write about the beach that existed on December 26, 2004, when the deadly Boxing Day tsunami ravaged the entire length of the Coromandel Coast. And most importantly, the beach that sprung out of the wreckage after." 
+      {
+        title: "Introduction",
+        content: "Every community carries stories that are not immediately visible. Behind familiar faces and everyday routines are experiences, questions, and convictions that often remain unspoken. Sometimes they stay hidden because they feel too personal. Sometimes they are overshadowed by expectation, performance, or the pressure to appear certain. But when those layers fall away, something powerful becomes possible.\n\nThat is the spirit behind Building the Unmasked, one of the central ideas shaping TEDxSIST 2026."
       },
-      { 
-        title: "The Tsunami", 
-        content: "The 2004 Indian Ocean tsunami was one of the deadliest natural disasters in modern history, le aving a trail of devastation in its wake.It was triggered by a massive undersea earthquake off the coast of Indonesia, with waves towering up to 100 feet high.In Chennai and other affected regions, entire communities were obliterated within minutes—homes, schools, and livelihoods reduced to rubble.Thousands of lives were lost, and countless others were displaced, left to grapple with unimaginable grief and uncertainty. Entire fishing villages were destroyed.The survivors were left grappling with grief, homelessness, and uncertainty about their future.And yet.Look at where we are now—Chennai has sprung back to life, its beaches bustling and more vibrant than ever.How did we come back from such a deeply scarring event?" 
+      {
+        title: "What It Means to Build the Unmasked",
+        content: "To build the unmasked is to create from a place of honesty. It means making space for voices that do not rely on perfection to be meaningful. It means listening to perspectives that reveal struggle, insight, vulnerability, and growth without trying to polish them into something artificial. It is about recognizing that authenticity is not a weakness in ideas—it is often what gives them power.\n\nWithin every local community, there are people already living this truth. They are asking difficult questions, creating change in quiet ways, and choosing courage when easier paths are available. They may not always stand in the spotlight, but their stories carry the kind of depth that can move others toward reflection and action."
       },
-      { 
-        title: "The key word: Resilience.", 
-        content: "The Fishing Communities of ChennaiThe hardest-hit groups were the fishing community. Entire villages were ripped apart—lives lost, equipment swallowed by the waves, and homes reduced to rubble.Holding so much grief in their hearts as their entire lives and futures were ripped from their grasp, they still fought.They banded together to share whatever resources remained, helping each other through the throes of their pain.The government reached out to assist them, providing funds, housing, and alternative methods of employment." 
+      {
+        title: "Honoring Those Voices",
+        content: "TEDxSIST 2026 wants to honor those voices.\n\nThis edition is not only about innovation in the abstract. It is also about human honesty. It is about how people confront uncertainty, reshape identity, reimagine systems, and find purpose in places that once felt unclear. The unknown does not affect everyone in the same way, but many of us know what it means to move through transition, doubt, or reinvention. When those experiences are shared openly, they become more than personal stories—they become bridges.\n\nThe community around TEDxSIST is filled with such bridges. It includes people who have learned to build while still figuring things out. It includes those who have made room for change without waiting for perfect conditions. It includes voices that challenge comfortable narratives and invite deeper reflection."
       },
-      { 
-        title: "Community and Compassion", 
-        content: "As stories of suffering and pain reverberated through local media and word of mouth, communities across the world ached in empathy.Local NGOs, religious institutions, and volunteer groups in Chennai played a pivotal role in recovery efforts.Organizations like the South Indian Federation of Fishermen Societies (SIFFS) collaborated with international agencies to provide aid.Schools and colleges organized volunteering efforts and fundraising campaigns. Medical camps dispensed critical aid, while relief camps worked tirelessly to provide food and clean drinking water to survivors." 
+      {
+        title: "Why This Theme Matters Now",
+        content: "Building the unmasked is also about removing distance between ideas and lived reality. Sometimes the most moving insight is not the most polished one. It is the one that feels true. It is the one that names what others have felt but not yet articulated. It is the one that opens a window and says: this, too, deserves to be seen.\n\nThat is why this theme matters now. We live in a time when many people feel pressure to define themselves quickly, confidently, and visibly. Yet some of the most meaningful growth happens outside performance. It happens in uncertainty, in revision, in honesty, and in the courage to keep building without needing to appear finished."
       },
-      { 
-        title: "How to Get Involved", 
-        content: "Whether you're attending as a participant or want to contribute as a volunteer, TEDxSIST 2025 offers multiple ways to get involved. Engage with our online community, share your insights, and be part of a movement that promotes resilience and innovation." 
+      {
+        title: "An Invitation to Listen Deeply",
+        content: "TEDxSIST 2026 embraces that space. It welcomes stories that are still becoming. It values ideas that come with complexity. It invites us to see that truth and transformation often emerge together.\n\nAs we prepare for this edition, we are reminded that community is not only built through shared celebration. It is also built through shared recognition. When one person speaks honestly, others often find language for their own experiences. When one story becomes visible, it creates permission for more stories to surface.\n\nThis is how ideas spread meaningfully—not only through scale, but through resonance.\n\nBuilding the Unmasked is an invitation to listen more deeply, speak more truthfully, and create more courageously. It calls on us to look beyond surfaces and pay attention to what is real, unfinished, and alive with possibility.\n\nAnd when we do, we may find that the most powerful voices in our community were never absent. They were simply waiting for a space where they could be heard."
       }
     ]
   },
-  'its-tedxsist-time-are-you-ready-to-make-the-most-of-it': {
-    image: "/placeholder.svg",
+  'tedxsist-2026-are-you-ready-to-step-into-the-unknown': {
+    image: "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/336f72e12797263c6128e5539d0c518e7ad424ea.jpg",
     badge: { icon: "🎯", text: "Featured" },
     className: "md:col-span-2",
-    title: "It’s TEDx SIST Time! Are You Ready to Make the Most of It?",
-    author: { 
-      name: "Catherine Oviya", 
-      avatar: "/placeholder.svg" 
+    title: "TEDxSIST 2026 Is Here: Are You Ready to Step Into the Unknown?",
+    author: {
+      name: "Catherine Oviya",
+      avatar: "/placeholder.svg"
     },
-    description: "Experience TEDxSIST 2025, where resilience meets innovation. Engage with thought-provoking talks, connect with visionary speakers, and expand your network in an inspiring environment that fosters creativity, transformation, and impactful ideas shaping the future.",
-    timeAgo: formatRelativeTime(1739356812),
+    description: "TEDxSIST 2026 is more than an event—it is an invitation to engage with ideas that challenge comfort and open new paths of thought. Here is how to prepare, participate, and make the most of an edition built around opportunity, courage, and new perspectives.",
+    timeAgo: formatRelativeTime(1749856812),
     sections: [
-      { 
-        title: "Introduction", 
-        content: "TEDxSIST 2025 brings together innovative minds to explore the theme of resilience. This year's event focuses on the power of human adaptability and growth through challenges. The conference will highlight inspiring stories and groundbreaking ideas that redefine perseverance in a rapidly changing world." 
+      {
+        title: "A Moment Becomes an Experience",
+        content: "There is something special about the moment an idea becomes an experience. What begins as a theme, a conversation, or a vision slowly transforms into something people can step into, feel, and carry with them. TEDxSIST 2026 is one of those moments.\n\nThis year, we invite you to be part of an edition shaped by curiosity, courage, and possibility. Opportunity in the Unknown is more than a theme for the stage. It is an invitation to rethink how we meet change, uncertainty, and new ideas in our own lives. It asks us not to wait for everything to feel certain before we begin engaging. Instead, it encourages us to enter the unfamiliar with attention, openness, and purpose."
       },
-      { 
-        title: "Event Highlights", 
-        content: "Join us for a day filled with compelling talks, interactive sessions, and networking opportunities. Our carefully curated speaker lineup features industry leaders, innovators, and changemakers who have navigated personal and professional obstacles to emerge stronger and more influential than ever." 
+      {
+        title: "How to Make the Most of It",
+        content: "Attending TEDxSIST 2026 is not only about watching talks. It is about participating in a shared experience of thought and reflection. It is about being present in a space where different voices, disciplines, and stories meet. It is about allowing yourself to be challenged, surprised, and inspired.\n\nStart by arriving with curiosity. The strongest TEDx experiences often begin when we let go of the need to predict what we will take away. Some ideas will resonate immediately. Others may unfold slowly, returning to us later in conversation or reflection. The more open we are, the more room there is for something meaningful to shift.\n\nListen beyond the obvious. Every talk carries not only information, but intention. Pay attention to what ideas are asking of you. Are they challenging a belief you have held for a long time? Are they helping you see a problem differently? Are they opening a possibility you had not considered before?"
       },
-      { 
-        title: "What to Expect", 
-        content: "Attendees will be immersed in thought-provoking presentations, gain valuable insights from expert speakers, and engage in meaningful discussions. From panel discussions to live Q&A sessions, every moment is designed to spark curiosity and ignite conversations that lead to action." 
+      {
+        title: "Engage, Reflect, Connect",
+        content: "Engage with people, not just content. TEDxSIST is also about community. Some of the most memorable moments happen outside the formal talk itself—in discussions, reactions, shared questions, and unexpected connections. When people gather around ideas, they create new ones together.\n\nReflect as you experience. Take notes, capture phrases, or simply pause between sessions to process what you have heard. A TEDx event moves quickly, and reflection helps transform inspiration into something more lasting. Sometimes one sentence, heard at the right time, can shape an entirely new direction.\n\nBe willing to carry the experience forward. The value of an event does not end when it concludes. The real question is what continues afterward. Which ideas stay with you? Which perspectives influence your choices? Which conversations do you continue? TEDxSIST is not only about a day of talks—it is about the afterlife of thought."
       },
-      { 
-        title: "Behind the Scenes", 
-        content: "Bringing TEDxSIST 2025 to life required months of planning and dedication. Our team has worked tirelessly to ensure every detail, from speaker curation to stage design, creates an atmosphere of learning and inspiration. Get an exclusive look at how this event came together." 
+      {
+        title: "What This Edition Asks of Us",
+        content: "This edition is especially meaningful because of what it asks us to confront. The unknown is not always easy. It can feel uncertain, demanding, and unfinished. But it can also be the place where growth becomes visible. When we stop treating uncertainty as emptiness, we start recognizing it as a space full of hidden direction.\n\nTEDxSIST 2026 is built for that realization. It is a gathering for people who are ready to think deeply, listen generously, and imagine what becomes possible when we stop asking only for certainty and start making room for exploration."
       },
-      { 
-        title: "How to Get Involved", 
-        content: "Whether you're attending as a participant or want to contribute as a volunteer, TEDxSIST 2025 offers multiple ways to get involved. Engage with our online community, share your insights, and be part of a movement that promotes resilience and innovation." 
+      {
+        title: "It's TEDxSIST Time",
+        content: "So yes, it is TEDxSIST time.\n\nAnd this year, more than ever, it is time to step into the unknown—not passively, but with courage, attention, and the willingness to be changed by what you encounter."
       }
     ]
   },

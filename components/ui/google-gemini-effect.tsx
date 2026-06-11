@@ -18,7 +18,7 @@ interface GoogleGeminiEffectProps {
 
 const transition = {
   duration: 2,
-  ease: "easeInOut",
+  ease: "easeInOut" as const,
 };
 
 const words = [

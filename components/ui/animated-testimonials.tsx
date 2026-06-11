@@ -90,7 +90,7 @@ export const AnimatedTestimonials = ({
                   }}
                   transition={{
                     duration: 0.4,
-                    ease: "easeInOut",
+                    ease: "easeInOut" as const,
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
@@ -124,7 +124,7 @@ export const AnimatedTestimonials = ({
             }}
             transition={{
               duration: 0.2,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
             }}
           >
             <h3 className="text-2xl font-bold text-white">
@@ -149,7 +149,7 @@ export const AnimatedTestimonials = ({
                   }}
                   transition={{
                     duration: 0.2,
-                    ease: "easeInOut",
+                    ease: "easeInOut" as const,
                     delay: 0.02 * index,
                   }}
                   className="inline-block"

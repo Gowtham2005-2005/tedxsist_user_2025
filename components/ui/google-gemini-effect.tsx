@@ -44,7 +44,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               transition={{
                 duration: 1,
                 delay: 0,
-                ease: [0.25, 0.4, 0.25, 1],
+                ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number],
               }}
               className="text-base sm:text-lg md:text-2xl lg:text-xl text-neutral-300 dark:text-neutral-300"
             >
@@ -57,7 +57,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
               transition={{
                 duration: 1,
                 delay: 0.4,
-                ease: [0.25, 0.4, 0.25, 1],
+                ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number],
               }}
               className="flex flex-col items-center gap-2"
             >
@@ -67,7 +67,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
                 transition={{
                   duration: 1,
                   delay: 0.8,
-                  ease: [0.25, 0.4, 0.25, 1],
+                  ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number],
                 }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold leading-none"
               >
@@ -79,7 +79,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
                 transition={{
                   duration: 1,
                   delay: 1.2,
-                  ease: [0.25, 0.4, 0.25, 1],
+                  ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number],
                 }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold leading-none"
               >
@@ -94,7 +94,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
             transition={{
               duration: 1,
               delay: 1.6,
-              ease: [0.25, 0.4, 0.25, 1],
+              ease: [0.25, 0.4, 0.25, 1] as [number, number, number, number],
             }}
             className="flex justify-center mt-4 sm:mt-6 md:mt-8"
           >

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid';
 import { ArrowRight } from 'lucide-react';
 import { blogData } from '@/lib/blogData';
+import Image from 'next/image';
 
 export default function BlogBentoGrid() {
   const router = useRouter();
@@ -34,10 +35,13 @@ export default function BlogBentoGrid() {
             <BentoGridItem
               title={blogEntries[0][1].title}
               description={blogEntries[0][1].description}
-              header={<Skeleton />}
+              header={<div className="relative w-full h-48 md:h-full min-h-[12rem]">
+                <Image src={blogEntries[0][1].image} alt={blogEntries[0][1].title} fill className="object-cover rounded-xl" />
+              </div>}
               className="md:col-span-3"
               icon="Article"
               name={blogEntries[0][1].author.name}
+              avatarSrc={blogEntries[0][1].author.avatar}
               timeAgo={blogEntries[0][1].timeAgo}
               onClick={() => router.push(`/blogs/${blogEntries[0][0]}`)}
             />
@@ -63,12 +67,15 @@ export default function BlogBentoGrid() {
               key={i}
               title={blog.title}
               description={blog.description}
-              header={<Skeleton />}
+              header={<div className="relative w-full h-48 min-h-[10rem]">
+                <Image src={blog.image} alt={blog.title} fill className="object-cover rounded-xl" />
+              </div>}
               className={`${blog.className} min-h-[20rem] transition-all duration-300 ${
                 blog.description.length > 100 ? 'md:min-h-[24rem]' : ''
               }`}
               icon={blog.badge.text}
               name={blog.author.name}
+              avatarSrc={blog.author.avatar}
               timeAgo={blog.timeAgo}
               onClick={() => router.push(`/blogs/${slug}`)}
             />
@@ -79,6 +86,4 @@ export default function BlogBentoGrid() {
   );
 }
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-black"></div>
-);
+

@@ -30,10 +30,10 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
   "2026 Team": [
     {
       id: 0,
-      quote: "Tech lead of 2026",
-      name: "siddarth",
-      designation: "Tech lead",
-      src: "/tech-lead-sidaarth.jpeg",
+      quote: "As the Tech Lead for TEDxSIST 2026, Sidaarth brings innovative digital solutions to life. With a keen eye for detail and a passion for seamless user experiences, he ensures our technical infrastructure is robust and modern, bridging ideas with cutting-edge technology.",
+      name: "Sidaarth",
+      designation: "Tech Lead",
+      src: "/sidaarth-tech-lead.jpeg",
     },
     {
       id: 1,

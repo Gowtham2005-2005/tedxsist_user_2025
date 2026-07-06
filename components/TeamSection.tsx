@@ -30,10 +30,52 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
   "2026 Team": [
     {
       id: 0,
-      quote: "Team details coming soon...",
-      name: "TBA",
-      designation: "TBA",
-      src: "/sample.png",
+      quote: "Tech lead of 2026",
+      name: "siddarth",
+      designation: "Tech lead",
+      src: "/tech-lead-sidaarth.jpeg",
+    },
+    {
+      id: 1,
+      quote: "Co-Organiser of TEDxSIST 2025, Thaarani embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
+      name: "Thaarani",
+      designation: "President",
+      src: "/president-thaarani.jpeg",
+    },
+    {
+      id: 2,
+      quote: "Leading and organizing clusters of teams, ensuring smooth coordination and execution of TEDx initiatives.",
+      name: "Cluster Coordinator",
+      designation: "Cluster Coordinator",
+      src: "/cluster-coordinator.jpeg",
+    },
+    {
+      id: 3,
+      quote: "Driving the vision and strategy of TEDxSIST, assisting the team in making the event a resounding success.",
+      name: "Co-Organizer and VP",
+      designation: "Co-Organizer and VP",
+      src: "/co-organizerandvp.jpeg",
+    },
+    {
+      id: 4,
+      quote: "Curating powerful ideas and shaping the narrative of TEDxSIST to inspire our community.",
+      name: "Curation Lead",
+      designation: "Curation Lead",
+      src: "/curation-lead.jpeg",
+    },
+    {
+      id: 5,
+      quote: "Crafting visually compelling experiences and translating the spirit of TEDx into stunning aesthetics.",
+      name: "Design Lead",
+      designation: "Design Lead",
+      src: "/design-lead.jpeg",
+    },
+    {
+      id: 6,
+      quote: "Ensuring every logistical detail is handled with precision to deliver a seamless event experience.",
+      name: "Logistics and Management Lead",
+      designation: "Logistics and Management Lead",
+      src: "/logistics-and-management-lead.jpeg",
     },
   ],
   "Organisers": [
@@ -49,7 +91,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Co-Organiser of TEDxSIST 2025, Thaarani embraces challenges with her motto, \"Do it scared!\" Her resilience and leadership empower the team, pushing them beyond comfort zones to create a powerful, transformative TEDx experience.",
       name: "Thaarani",
       designation: "Co-Organiser",
-      src: "/thaarani.jpg",
+      src: "/sample.png",
     },
     {
       id: 2,
@@ -65,7 +107,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "As Curation Lead, Safa crafts powerful narratives, shaping TEDxSIST 2025 to inspire and challenge perspectives. Through thematic flow and talk structure, she ensures an immersive experience that sparks curiosity and deep engagement.",
       name: "Safa",
       designation: "Curation Lead",
-      src: "/curationlead.jpg",
+      src: "/sample.png",
     },
     {
       id: 5,
@@ -88,7 +130,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       designation: "Curation Team",
       src: "/sample.png",
     },
-    
+
     {
       id: 8,
       quote: "Member of the Curation Team",
@@ -147,7 +189,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Shiney Beulah, the Logistics and Operations Lead, is a dynamic multitasker who thrives on collaboration and precision. With relentless dedication, she streamlines event logistics, ensuring TEDxSIST 2025 runs flawlessly while fostering teamwork and an inspiring, detail-oriented environment.",
       name: "Shiney Beulah J",
       designation: "Logistics and Operations Team",
-      src: "/logisticsandmanagementlead.jpg",
+      src: "/sample.png",
     },
     {
       id: 16,
@@ -184,7 +226,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       quote: "Dhyaneshwar, TEDxSIST 2025’s Production Lead, is a visionary force ensuring seamless execution. Known for his adaptability and sharp creative eye, he meticulously oversees every detail, blending ideation with precision to bring the event’s visual storytelling to life.",
       name: "Dhyaneshwar MD",
       designation: "Production Lead",
-      src: "/designlead.jpg",
+      src: "/sample.png",
     },
     {
       id: 21,
@@ -216,7 +258,7 @@ const testimonialsByTeam: Record<TeamName, Testimonial[]> = {
       designation: "Tech Team",
       src: "/sample.png",
     },
-    
+
     {
       id: 25,
       quote: "Member of the Tech Team",
@@ -271,15 +313,15 @@ interface Tab {
 const renderTeamMembers = (members: Testimonial[]): Testimonial[] => {
   return members.map((m) =>
     m.name.includes("TBA") ||
-    m.designation.includes("TBA") ||
-    m.quote.toLowerCase().includes("coming soon")
+      m.designation.includes("TBA") ||
+      m.quote.toLowerCase().includes("coming soon")
       ? {
-          id: m.id,
-          quote: "Team details for this edition will be announced shortly.",
-          name: "—",
-          designation: "—",
-          src: "/sample.png",
-        }
+        id: m.id,
+        quote: "Team details for this edition will be announced shortly.",
+        name: "—",
+        designation: "—",
+        src: "/sample.png",
+      }
       : m
   );
 };
@@ -374,7 +416,7 @@ const Tabs = ({
           </button>
         </div>
       </div>
-      
+
       <div className="relative mt-12">
         <AnimatePresence mode="wait">
           <motion.div

@@ -83,12 +83,12 @@ const App = () => {
       >
         <p className="text-2xl mb-4">
           2026 Registration Open - Save the date{" "}
-          <span className="text-primary font-bold">24th June 2026</span>
+          <span className="text-primary font-bold">17th July 2026</span>
         </p>
 
         {isMounted && windowWidth > 0 && (
           <FlipClockCountdown
-            to={new Date("2026-06-24T00:00:00").getTime()}
+            to={new Date("2026-07-17T00:00:00").getTime()}
             labels={["Days", "Hours", "Minutes", "Seconds"]}
             labelStyle={{
               fontSize: `${sizes.label}px`,

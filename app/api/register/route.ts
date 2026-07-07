@@ -158,8 +158,8 @@ async function sendConfirmationEmail(to: string, username: string) {
           <!-- Header section -->
           <tr>
             <td style="background-color: #000000; padding: 40px 30px; text-align: center;">
-              <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST 2026 Official Logo" height="40" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
-              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Registration Received!</h1>
+              <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST Logo" height="40" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
+              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Registration Received for<br><span style="color: #eb0028;">TEDx</span>SIST 2026!</h1>
             </td>
           </tr>
 

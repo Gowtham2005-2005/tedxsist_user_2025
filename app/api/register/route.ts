@@ -133,410 +133,111 @@ async function sendConfirmationEmail(to: string, username: string) {
   const mailOptions = {
     from: emailUser,
     to,
-    subject: "TEDxSIST 2025 Registration successful",
+    subject: "TEDxSIST 2026 Registration Confirmed! 🎉",
     html: `
-      <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8" />
-<meta content="width=device-width" name="viewport" />
-<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-<meta name="x-apple-disable-message-reformatting" />
-<meta content="telephone=no,address=no,email=no,date=no,url=no" name="format-detection" />
-<title>Template</title>
-<!--[if mso]>
-            <style>
-                * {
-                    font-family: sans-serif !important;
-                }
-            </style>
-        <![endif]-->
-<!--[if !mso]><!-->
-<!-- <![endif]-->
-<link href="https://fonts.googleapis.com/css?family=Inter:900" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inter:600" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inter:800" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Open Sans:400" rel="stylesheet" type="text/css">
-<style>
-html {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-* {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-td {
-    vertical-align: top;
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
-}
-a {
-    text-decoration: none;
-}
-img {
-    -ms-interpolation-mode:bicubic;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-    u ~ div .email-container {
-        min-width: 320px !important;
-    }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-    u ~ div .email-container {
-        min-width: 375px !important;
-    }
-}
-@media only screen and (min-device-width: 414px) {
-    u ~ div .email-container {
-        min-width: 414px !important;
-    }
-}
-
-</style>
-<!--[if gte mso 9]>
-        <xml>
-            <o:OfficeDocumentSettings>
-                <o:AllowPNG/>
-                <o:PixelsPerInch>96</o:PixelsPerInch>
-            </o:OfficeDocumentSettings>
-        </xml>
-        <![endif]-->
-<style>
-@media only screen and (max-device-width: 599px), only screen and (max-width: 599px) {
-
-    .eh {
-        height:auto !important;
-    }
-    .desktop {
-        display: none !important;
-        height: 0 !important;
-        margin: 0 !important;
-        max-height: 0 !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        visibility: hidden !important;
-        width: 0 !important;
-    }
-    .mobile {
-        display: block !important;
-        width: auto !important;
-        height: auto !important;
-        float: none !important;
-    }
-    .email-container {
-        width: 100% !important;
-        margin: auto !important;
-    }
-    
-    .wid-auto {
-        width:auto !important;
-    }
-
-    .table-w-full-mobile {
-        width: 100%;
-    }
-
-    
-    
-
-    .mobile-center {
-        text-align: center;
-    }
-
-    .mobile-center > table {
-        display: inline-block;
-        vertical-align: inherit;
-    }
-
-    .mobile-left {
-        text-align: left;
-    }
-
-    .mobile-left > table {
-        display: inline-block;
-        vertical-align: inherit;
-    }
-
-    .mobile-right {
-        text-align: right;
-    }
-
-    .mobile-right > table {
-        display: inline-block;
-        vertical-align: inherit;
-    }
-
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEDxSIST 2026 Registration</title>
 </head>
+<body style="font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f4f5; margin: 0; padding: 0; -webkit-font-smoothing: antialiased;">
+  
+  <!-- Preheader Text -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0; color:transparent; mso-hide:all; font-size:0px; line-height:0px;">
+    Your TEDxSIST 2026 registration is confirmed. Save the date for 17 July 2026.
+  </div>
 
-<body width="100%" style="background-color:#ffffff;margin:0;padding:0!important;mso-line-height-rule:exactly;">
-<div style="background-color:#ffffff">
-<!--[if gte mso 9]>
-                <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-                <v:fill type="tile" color="#ffffff"/>
-                </v:background>
-                <![endif]-->
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td valign="top" align="center">
-<table bgcolor="#ffffff" style="margin:0 auto;" align="center" id="brick_container" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container">
-<tr>
-<td width="600" style="min-width:600px;">
-<table cellspacing="0" cellpadding="0" border="0">
-<td width="600" style="border-radius:50px; ">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td width="100%">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="100%" align="center" style="background-color:#000000; border-radius:25px 25px 0px 0px; " bgcolor="#000000">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td>
-<div style="line-height:39px; height:39px; font-size:39px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td align="center">
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="240" align="center"><img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" width="240" border="0" style="max-width:240px; width: 100%;
-         height: auto; display: block;"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:21px; height:21px; font-size:21px">&#8202;</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td width="100%">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="100%" align="center" style="vertical-align: middle; height:161px; background-color:#000000;  " bgcolor="#000000">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td style="height:108px; " align="center">
-<div style="line-height:48px;text-align:center;"><span style="color:#ffffff;font-weight:900;font-family:Inter,Arial,sans-serif;font-size:40px;letter-spacing:-0.02em;line-height:48px;text-align:center;">Successfully Registered for<br></span><span style="color:#eb0028;font-weight:900;font-family:Inter,Arial,sans-serif;font-size:40px;letter-spacing:-0.02em;line-height:48px;text-align:center;">TEDx</span><span style="color:#ffffff;font-weight:900;font-family:Inter,Arial,sans-serif;font-size:40px;letter-spacing:-0.02em;line-height:48px;text-align:center;">SIST 2025!</span></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td width="100%">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="100%" align="center" style="background-color:#000000;   padding-left:24px; padding-right:24px;" bgcolor="#000000">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td width="100%" align="center" style="  padding-left:24px; padding-right:24px;">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<div style="line-height:48px;text-align:left;"><span style="color:#ffffff;font-weight:900;font-family:Inter,Arial,sans-serif;font-size:40px;letter-spacing:-0.02em;line-height:48px;text-align:left;">Hi ${username},</span></div>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:20px; height:20px; font-size:20px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td align="center"><img src="https://media.marka-img.com/7929a0ca/kW9WPDkEj0ujaswX76aYRrXK81sY2X.png" width="504" border="0" style="width: 100%;
-         height: auto; display: block;"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:20px; height:20px; font-size:20px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td width="100%" align="center" style="  padding-left:24px; padding-right:24px;">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td align="center">
-<div>
-<!--[if mso]>
-                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="mailto:tedxsist@gmail.com" style="height:40px;v-text-anchor:middle;width:198px;" fillcolor="#eb0028"  stroke="f" arcsize="98%">
-                        <w:anchorlock/>
-                        <center style="white-space:nowrap;display:inline-block;text-align:center;color:#000000;font-weight:600;font-family:Inter,Arial,sans-serif;font-size:17px;">Reach us!</center>
-                        </v:roundrect>
-                    <![endif]-->
-<a href="mailto:tedxsist@gmail.com" style="white-space:nowrap;background-color:#eb0028;border-radius:39px; display:inline-block;text-align:center;color:#000000;font-weight:600;font-family:Inter,Arial,sans-serif;font-size:17px;line-height:40px;width:198px; -webkit-text-size-adjust:none;mso-hide:all;box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.0430000014603138);">Reach us!</a>
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:26px; height:26px; font-size:26px">&#8202;</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td width="100%">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="100%" align="center" style="vertical-align: middle; background-color:#f0efef; border-radius:0px 0px 25px 25px;  padding-left:24px; padding-right:24px;" bgcolor="#f0efef">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td>
-<div style="line-height:24px; height:24px; font-size:24px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: middle;" width="100%">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="100%" align="center">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td width="220" align="center"><img src="https://media.marka-img.com/7929a0ca/JN8wbGiqp27pedNPfLFkS287aRaBqL.png" width="220" border="0" style="max-width:220px; width: 100%;
-         height: auto; display: block;"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:5px; height:5px; font-size:5px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td align="center">
-<div style="line-height:29px;text-align:center;"><span style="color:#a3a3a3;font-weight:800;font-family:Inter,Arial,sans-serif;font-size:16px;line-height:29px;text-align:center;">Ideas Change Everything.</span></div>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:5px; height:5px; font-size:5px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td width="100%" align="center">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td align="center">
-<div style="line-height:24px;text-align:center;"><span style="color:#a3a3a3;font-family:Open Sans,Arial,sans-serif;font-size:10px;line-height:24px;text-align:center;">Don’t Reply. This is an auto generated email from TEDxSIST.</span></div>
-</td>
-</tr>
-<tr>
-<td align="center">
-<div style="line-height:13px;text-align:center;"><span style="color:#a3a3a3;font-family:Open Sans,Arial,sans-serif;font-size:10px;line-height:13px;text-align:center;">© TEDxSIST. All rights reserved.<br>If you have any questions</span></div>
-</td>
-</tr>
-<tr>
-<td align="center">
-<div style="line-height:13px;text-align:center;"><span style="color:#a3a3a3;font-family:Open Sans,Arial,sans-serif;font-size:10px;line-height:13px;text-align:center;">Please contact <a style="color:#a3a3a3;text-decoration:none;" href="mailto:tedxsist@gmail.com" target="_blank">tedxsist@gmail.com</a> </span></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:19px; height:19px; font-size:19px">&#8202;</div>
-</td>
-</tr>
-<tr>
-<td align="center">
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td style="vertical-align: middle;">
-<table cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td>
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td width="24"><a href="https://www.instagram.com/tedxsist?igsh=MWgwMGMzYXh4ZGphZQ=="><img src="https://media.marka-img.com/7929a0ca/i5QmZtopS37189vHhSeQYhkLVdxpj4.png" width="24" border="0" style="min-width:24px; width:24px;
-         height: auto; display: block;"></a></td>
-<td style="width:16px; min-width:16px;" width="16">&#8202;</td>
-<td width="24"><a href="https://www.youtube.com/@TED"><img src="https://media.marka-img.com/7929a0ca/pXM2sDpa6HLApH7tXUhqv5pJ9GlbkQ.png" width="24" border="0" style="min-width:24px; width:24px;
-         height: auto; display: block;"></a></td>
-<td style="width:16px; min-width:16px;" width="16">&#8202;</td>
-<td align="center" style="vertical-align: middle;  ">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td style="vertical-align: middle;" width="24" align="center"><a href="https://www.linkedin.com/company/tedxsist1"><img src="https://media.marka-img.com/7929a0ca/EXFByEdEV7fzmJDV7k1n3px1pc55Mo.png" width="24" border="0" style="min-width:24px; width:24px;
-         height: auto; display: block;"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<div style="line-height:24px; height:24px; font-size:24px">&#8202;</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</div>
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f5; padding: 40px 0;">
+    <tr>
+      <td align="center">
+        <!-- Main Card Container -->
+        <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff; border-radius: 16px; overflow: hidden; margin: 0 auto; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);">
+          
+          <!-- Header section -->
+          <tr>
+            <td style="background-color: #000000; padding: 40px 30px; text-align: center;">
+              <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST 2026 Official Logo" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
+              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Successfully Registered for<br><span style="color: #eb0028;">TEDx</span>SIST 2026!</h1>
+            </td>
+          </tr>
+
+          <!-- Body section -->
+          <tr>
+            <td style="padding: 40px 30px; color: #18181b;">
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Hi <strong>${username}</strong>,</p>
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">We are thrilled to confirm your registration for TEDxSIST 2026! Get ready for an inspiring day filled with powerful ideas, innovative speakers, and a community of forward-thinkers.</p>
+              
+              <!-- "Save the Date" Highlight Box using Table for Outlook Compatibility -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
+                <tr>
+                  <td style="background-color: #fef2f2; border-left: 4px solid #eb0028; padding: 24px; border-radius: 0 8px 8px 0;">
+                    <h3 style="margin: 0 0 15px 0; color: #eb0028; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">SAVE THE DATE</h3>
+                    <p style="margin: 8px 0; font-size: 16px; color: #3f3f46;"><strong style="color: #18181b; display: inline-block; width: 65px;">Date:</strong> 17th July 2026</p>
+                    <p style="margin: 8px 0; font-size: 16px; color: #3f3f46;"><strong style="color: #18181b; display: inline-block; width: 65px;">Venue:</strong> Sathyabama Institute of Science and Technology</p>
+                    
+                    <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top: 15px;">
+                      <tr>
+                        <td style="background-color: #22c55e; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 14px; font-weight: 600;">
+                          ✓ Registration Confirmed
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">We'll be sending you more details about the speakers, agenda, and exclusive attendee information as we get closer to the event.</p>
+              
+              <!-- CTA Button using Table for Outlook Compatibility -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 40px 0 20px 0;">
+                <tr>
+                  <td align="center">
+                    <table role="presentation" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" bgcolor="#eb0028" style="border-radius: 50px;">
+                          <a href="https://www.tedxsist.com" role="button" style="color: #ffffff; text-decoration: none; padding: 16px 36px; font-weight: 600; font-size: 16px; display: inline-block; letter-spacing: 0.5px;">Visit Our Website</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer section -->
+          <tr>
+            <td style="background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #e2e8f0;">
+              <img src="https://media.marka-img.com/7929a0ca/JN8wbGiqp27pedNPfLFkS287aRaBqL.png" alt="TEDxSIST Ideas Change Everything" style="height: 20px; margin-bottom: 20px; opacity: 0.8; display: inline-block; border: 0; outline: none; text-decoration: none;">
+              <p style="font-weight: 600; color: #475569; font-size: 14px; line-height: 1.5; margin: 5px 0;">Ideas Change Everything.</p>
+              
+              <div style="margin: 20px 0;">
+                <a href="https://www.instagram.com/tedxsist?igsh=MWgwMGMzYXh4ZGphZQ==" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/i5QmZtopS37189vHhSeQYhkLVdxpj4.png" alt="Instagram" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+                <a href="https://www.youtube.com/@TED" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/pXM2sDpa6HLApH7tXUhqv5pJ9GlbkQ.png" alt="YouTube" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+                <a href="https://www.linkedin.com/company/tedxsist1" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/EXFByEdEV7fzmJDV7k1n3px1pc55Mo.png" alt="LinkedIn" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+              </div>
+
+              <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 5px 0;">© 2026 TEDxSIST. All rights reserved.</p>
+              
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
+                <tr>
+                  <td align="center">
+                    <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 0;">Need help? Contact our support team at <br><a href="mailto:tedxsist@gmail.com" style="color: #eb0028; text-decoration: none; font-weight: 600;">tedxsist@gmail.com</a></p>
+                  </td>
+                </tr>
+              </table>
+              <p style="color: #94a3b8; font-size: 11px; line-height: 1.5; margin: 15px 0 0 0;">This is an auto-generated email. Please do not reply directly to this message.</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
-
 </html>
     `,
   };

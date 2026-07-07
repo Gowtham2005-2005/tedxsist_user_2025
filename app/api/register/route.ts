@@ -158,7 +158,7 @@ async function sendConfirmationEmail(to: string, username: string) {
           <!-- Header section -->
           <tr>
             <td style="background-color: #000000; padding: 40px 30px; text-align: center;">
-              <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST 2026 Official Logo" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
+              <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST 2026 Official Logo" height="40" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
               <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Registration Received!</h1>
             </td>
           </tr>
@@ -213,13 +213,13 @@ async function sendConfirmationEmail(to: string, username: string) {
           <!-- Footer section -->
           <tr>
             <td style="background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <img src="https://media.marka-img.com/7929a0ca/JN8wbGiqp27pedNPfLFkS287aRaBqL.png" alt="TEDxSIST Ideas Change Everything" style="height: 20px; margin-bottom: 20px; opacity: 0.8; display: inline-block; border: 0; outline: none; text-decoration: none;">
+              <img src="https://media.marka-img.com/7929a0ca/JN8wbGiqp27pedNPfLFkS287aRaBqL.png" alt="TEDxSIST Ideas Change Everything" height="20" style="height: 20px; margin-bottom: 20px; opacity: 0.8; display: inline-block; border: 0; outline: none; text-decoration: none;">
               <p style="font-weight: 600; color: #475569; font-size: 14px; line-height: 1.5; margin: 5px 0;">Ideas Change Everything.</p>
               
               <div style="margin: 20px 0;">
-                <a href="https://www.instagram.com/tedxsist?igsh=MWgwMGMzYXh4ZGphZQ==" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/i5QmZtopS37189vHhSeQYhkLVdxpj4.png" alt="Instagram" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
-                <a href="https://www.youtube.com/@TED" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/pXM2sDpa6HLApH7tXUhqv5pJ9GlbkQ.png" alt="YouTube" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
-                <a href="https://www.linkedin.com/company/tedxsist1" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/EXFByEdEV7fzmJDV7k1n3px1pc55Mo.png" alt="LinkedIn" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+                <a href="https://www.instagram.com/tedxsist?igsh=MWgwMGMzYXh4ZGphZQ==" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/i5QmZtopS37189vHhSeQYhkLVdxpj4.png" alt="Instagram" width="24" height="24" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+                <a href="https://www.youtube.com/@TED" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/pXM2sDpa6HLApH7tXUhqv5pJ9GlbkQ.png" alt="YouTube" width="24" height="24" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
+                <a href="https://www.linkedin.com/company/tedxsist1" style="display: inline-block; margin: 0 10px; text-decoration: none;"><img src="https://media.marka-img.com/7929a0ca/EXFByEdEV7fzmJDV7k1n3px1pc55Mo.png" alt="LinkedIn" width="24" height="24" style="width: 24px; height: 24px; display: inline-block; border: 0; outline: none; text-decoration: none;"></a>
               </div>
 
               <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin: 5px 0;">© 2026 TEDxSIST. All rights reserved.</p>

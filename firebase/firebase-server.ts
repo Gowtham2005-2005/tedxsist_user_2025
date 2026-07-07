@@ -11,6 +11,11 @@ if (!admin.apps.length) {
       throw new Error('Invalid service account configuration');
     }
 
+    // Fix for Vercel environment variables where \n might be escaped
+    if (serviceAccount.private_key) {
+      serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, '\n');
+    }
+
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
     });

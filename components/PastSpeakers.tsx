@@ -26,10 +26,40 @@ const testimonials2026: Testimonial[] = [
 
 const testimonials2025: Testimonial[] = [
   {
-    quote: "Speaker details coming soon...",
-    name: "TBA",
-    designation: "TBA",
-    src: "/sample.png",
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Archana Timmaraju",
+    designation: "Speaker",
+    src: "/ARCHANA TIMMARAJU.jpeg",
+  },
+  {
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Dr. Augustus Samuel Dood",
+    designation: "Speaker",
+    src: "/DR.AUGUSTUS SAMUEL DOOD.jpeg",
+  },
+  {
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Mr. Prabhu",
+    designation: "Speaker",
+    src: "/MR.PRABHU.jpeg",
+  },
+  {
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Sankari Sudhar",
+    designation: "Speaker",
+    src: "/SANKARI SUDHAR.jpeg",
+  },
+  {
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Srikanth Santhinathan",
+    designation: "Speaker",
+    src: "/SRIKANTH SANTHINATHAN.jpeg",
+  },
+  {
+    quote: "TEDxSIST 2025 Speaker",
+    name: "Vanathi S",
+    designation: "Speaker",
+    src: "/VANATHI.S.jpeg",
   },
 ]
 
@@ -115,18 +145,7 @@ const testimonialsByYear: Record<Year, Testimonial[]> = {
 }
 
 const renderTestimonials = (year: Year): Testimonial[] => {
-  const raw = testimonialsByYear[year];
-  if (year !== 2025) return raw;
-  return raw.map((t) =>
-    t.name.includes("TBA") || t.designation.includes("TBA")
-      ? {
-          quote: "Speaker details from the 2025 edition will be announced shortly.",
-          name: "TEDxSIST 2025",
-          designation: "Previous Edition",
-          src: "/sample.png",
-        }
-      : t
-  );
+  return testimonialsByYear[year];
 };
 
 const createYearContent = (year: Year) => {
@@ -134,7 +153,7 @@ const createYearContent = (year: Year) => {
 }
 
 const tabs = years.map(year => ({
-  title: year === 2025 ? "2025 (Previous Edition)" : year.toString(),
+  title: year.toString(),
   value: year.toString(),
   content: createYearContent(year as Year)
 }))

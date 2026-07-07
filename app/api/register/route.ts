@@ -133,7 +133,7 @@ async function sendConfirmationEmail(to: string, username: string) {
   const mailOptions = {
     from: emailUser,
     to,
-    subject: "TEDxSIST 2026 Registration Confirmed! 🎉",
+    subject: "TEDxSIST 2026 Registration Received! 🎉",
     html: `
 <!DOCTYPE html>
 <html>
@@ -146,7 +146,7 @@ async function sendConfirmationEmail(to: string, username: string) {
   
   <!-- Preheader Text -->
   <div style="display:none; max-height:0; overflow:hidden; opacity:0; color:transparent; mso-hide:all; font-size:0px; line-height:0px;">
-    Your TEDxSIST 2026 registration is confirmed. Save the date for 17 July 2026.
+    Thank you for registering for TEDxSIST 2026. We will notify you if you are selected to attend.
   </div>
 
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f5; padding: 40px 0;">
@@ -159,7 +159,7 @@ async function sendConfirmationEmail(to: string, username: string) {
           <tr>
             <td style="background-color: #000000; padding: 40px 30px; text-align: center;">
               <img src="https://media.marka-img.com/7929a0ca/Z57FdYod0OV2031NJp5b3VwvgbqIpK.png" alt="TEDxSIST 2026 Official Logo" style="height: 40px; margin-bottom: 24px; display: block; margin: 0 auto 24px auto; border: 0; outline: none; text-decoration: none;">
-              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Successfully Registered for<br><span style="color: #eb0028;">TEDx</span>SIST 2026!</h1>
+              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 800; line-height: 1.3;">Registration Received!</h1>
             </td>
           </tr>
 
@@ -167,8 +167,10 @@ async function sendConfirmationEmail(to: string, username: string) {
           <tr>
             <td style="padding: 40px 30px; color: #18181b;">
               <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Hi <strong>${username}</strong>,</p>
-              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">We are thrilled to confirm your registration for TEDxSIST 2026! Get ready for an inspiring day filled with powerful ideas, innovative speakers, and a community of forward-thinkers.</p>
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Thank you for registering for TEDxSIST 2026! We are excited by your interest in joining us for an inspiring day filled with powerful ideas and a community of forward-thinkers.</p>
               
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0; color: #475569;"><em>Please note: Due to limited seating, we will be carefully reviewing all applications to select our attendees.</em></p>
+
               <!-- "Save the Date" Highlight Box using Table for Outlook Compatibility -->
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
                 <tr>
@@ -179,8 +181,8 @@ async function sendConfirmationEmail(to: string, username: string) {
                     
                     <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top: 15px;">
                       <tr>
-                        <td style="background-color: #22c55e; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 14px; font-weight: 600;">
-                          ✓ Registration Confirmed
+                        <td style="background-color: #f59e0b; color: #ffffff; padding: 6px 12px; border-radius: 4px; font-size: 14px; font-weight: 600;">
+                          Status: Application Under Review
                         </td>
                       </tr>
                     </table>
@@ -188,7 +190,7 @@ async function sendConfirmationEmail(to: string, username: string) {
                 </tr>
               </table>
 
-              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">We'll be sending you more details about the speakers, agenda, and exclusive attendee information as we get closer to the event.</p>
+              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">We will notify you via email if you are selected to attend. Keep an eye on your inbox for further updates!</p>
               
               <!-- CTA Button using Table for Outlook Compatibility -->
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 40px 0 20px 0;">

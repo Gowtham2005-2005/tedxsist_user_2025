@@ -1,5 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import { adminDb } from "@/firebase/firebase-server";
+
+export const maxDuration = 60; // Set max duration to 60 seconds to prevent timeouts
+
 import { FieldValue } from "firebase-admin/firestore";
 import { v4 as uuidv4 } from "uuid";
 import nodemailer from "nodemailer";
@@ -41,6 +44,7 @@ export async function POST(req: NextRequest) {
 
     const participantsRef = adminDb.collection("participants").doc(email);
     const registeredRef = adminDb.collection("registered").doc("emails");
+    const participantId = uuidv4();
 
     await adminDb.runTransaction(async (transaction) => {
       const registeredDoc = await transaction.get(registeredRef);
@@ -49,12 +53,11 @@ export async function POST(req: NextRequest) {
         throw new Error("You have already registered.");
       }
 
-      const id = uuidv4();
       const name = `${firstName} ${lastName}`;
       const department = branch;
 
       transaction.set(participantsRef, {
-        id,
+        id: participantId,
         name,
         email,
         degree,
@@ -76,9 +79,15 @@ export async function POST(req: NextRequest) {
       );
     });
 
-    await sendConfirmationEmail(email, firstName);
+    after(async () => {
+      try {
+        await sendConfirmationEmail(email, firstName);
+      } catch (emailError) {
+        console.error("Failed to send confirmation email:", emailError);
+      }
+    });
 
-    return NextResponse.json({ success: true, participantId: uuidv4() }, { status: 201 });
+    return NextResponse.json({ success: true, participantId }, { status: 201 });
   } catch (error: unknown) {
     if (error instanceof Error) {
       if (error.message === "You have already registered.") {

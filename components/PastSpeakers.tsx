@@ -17,10 +17,34 @@ const years = [2026, 2025, 2023, 2022] as const;
 
 const testimonials2026: Testimonial[] = [
   {
-    quote: "The 2026 speaker lineup will be revealed soon. Stay tuned for updates.",
-    name: "TEDxSIST 2026",
-    designation: "Coming Soon",
-    src: "/sample.png",
+    quote: "Ankita Thadani is the Founder and Chief Alchemist at Secret Alchemist, bringing a unique blend of creativity and innovation to her work.",
+    name: "Ankita Thadani",
+    designation: "Founder and Chief Alchemist, Secret Alchemist",
+    src: "/ankita-thadani-founder-and-chief-alchemist-secret-alchemist.jpeg",
+  },
+  {
+    quote: "Mohamed Irfan is an entertainer known for his captivating performances that leave audiences inspired and entertained.",
+    name: "Mohamed Irfan",
+    designation: "Entertainer",
+    src: "/mohamed-irfan-entertainer.jpeg",
+  },
+  {
+    quote: "Rayne Mithun is a digital creator and talk show host who connects with audiences through engaging content and conversations.",
+    name: "Rayne Mithun",
+    designation: "Digital Creator and Talk Show Host",
+    src: "/rayne-mithun-digital-creator-and-talk-show-host.jpeg",
+  },
+  {
+    quote: "Rohini Manian is the CEO of Global Adjustments, leading with vision and expertise in global mobility solutions.",
+    name: "Rohini Manian",
+    designation: "CEO, Global Adjustments",
+    src: "/rohini-manian-ceo-global-adjusments.jpeg",
+  },
+  {
+    quote: "Senthilkumaran is a documentary photographer and National Geographic Explorer, capturing stories that matter through his lens.",
+    name: "Senthilkumaran",
+    designation: "Documentary Photographer and National Geographic Explorer",
+    src: "/senthilkumaran-documentary-photographer-and-national-geographic-explorer.jpeg",
   },
 ]
 
@@ -159,6 +183,12 @@ const tabs = years.map(year => ({
 }))
 
 export default function PastSpeakers() {
+  const [activeYear, setActiveYear] = useState<Year>(2026);
+
+  const handleTabChange = (tab: Tab) => {
+    setActiveYear(parseInt(tab.value) as Year);
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -166,9 +196,16 @@ export default function PastSpeakers() {
       transition={{ duration: 0.8, delay: 0.4 }}
       className="mb-24 border-b border-gray-700 pb-12 pt-16"
     >
-      <h2 className="text-4xl font-bold mb-4 text-center">Past <span className="text-primary">Speakers</span></h2>
+      <h2 className="text-4xl font-bold mb-4 text-center">
+        {activeYear === 2026 ? (
+          <><span className="text-primary">Speakers</span></>
+        ) : (
+          <>Past <span className="text-primary">Speakers</span></>
+        )}
+      </h2>
       <Tabs
         tabs={tabs}
+        onTabChange={handleTabChange}
         containerClassName="flex justify-center mb-12"
         tabClassName="px-4 py-2 text-base font-medium rounded-full border border-transparent transition-all hover:border-primary"
         activeTabClassName="bg-primary text-white"
@@ -186,18 +223,25 @@ type Tab = {
 
 const Tabs = ({
   tabs: propTabs,
+  onTabChange,
   containerClassName,
   activeTabClassName,
   tabClassName,
   contentClassName,
 }: {
   tabs: Tab[];
+  onTabChange?: (tab: Tab) => void;
   containerClassName?: string;
   activeTabClassName?: string;
   tabClassName?: string;
   contentClassName?: string;
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0]);
+
+  const handleTabClick = (tab: Tab) => {
+    setActive(tab);
+    onTabChange?.(tab);
+  };
 
   return (
     <>
@@ -210,7 +254,7 @@ const Tabs = ({
         {propTabs.map((tab) => (
           <button
             key={tab.title}
-            onClick={() => setActive(tab)}
+            onClick={() => handleTabClick(tab)}
             className={cn(
               "relative",
               tabClassName,

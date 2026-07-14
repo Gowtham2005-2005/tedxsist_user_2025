@@ -134,11 +134,11 @@ export const Timeline = () => {
       },
       images: [
         {
-          src: "/WhatsApp Image 2026-07-14 at 5.42.10 PM.jpeg",
+          src: "/2025-event-1.png",
           alt: "TEDxSIST 2025 Event"
         },
         {
-          src: "/WhatsApp Image 2026-07-14 at 5.42.11 PM.jpeg",
+          src: "/2025-event-2.png",
           alt: "TEDxSIST 2025 Speaker"
         }
       ]

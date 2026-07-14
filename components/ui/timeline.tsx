@@ -133,11 +133,11 @@ export const Timeline = () => {
       },
       images: [
         {
-          src: "/2025-event-1.jpg",
+          src: "/2025-event-1.heic",
           alt: "TEDxSIST 2025 Event"
         },
         {
-          src: "/2025-event-2.jpg",
+          src: "/2025-event-2.heic",
           alt: "TEDxSIST 2025 Speaker"
         }
       ]

@@ -99,6 +99,7 @@ const TimelineEntry = ({
                   onError={() => handleImageError(image.src)}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   priority={index === 0} // Load the first image with priority
+                  unoptimized={true}
                 />
               ) : (
                 <div className="w-full h-full bg-gray-800 rounded-lg flex items-center justify-center">
@@ -133,12 +134,8 @@ export const Timeline = () => {
       },
       images: [
         {
-          src: "/2025-event-1.jpg",
+          src: "/2025-event.png",
           alt: "TEDxSIST 2025 Event"
-        },
-        {
-          src: "/2025-event-2.jpg",
-          alt: "TEDxSIST 2025 Speaker"
         }
       ]
     },

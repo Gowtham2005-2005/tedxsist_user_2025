@@ -117,7 +117,7 @@ const TimelineEntry = ({
 export const Timeline = () => {
   const timelineData = [
     {
-      title: "Upcoming",
+      title: "2026",
       content: {
         headingHighlight: "Opportunity in the Unknown",
         heading: ": Building the Unmasked",
@@ -130,7 +130,17 @@ export const Timeline = () => {
         headingHighlight: "Resilience",
         heading: " – Exploring Human Experiences",
         description: "The upcoming TEDxSIST event will focus on resilience—the ability to overcome challenges and emerge stronger. This theme explores various aspects of resilience in human experiences, including personal growth, community solidarity, innovation, and creativity. Join us as we hear inspiring talks from individuals who embody resilience and share transformative ideas that drive change."
-      }
+      },
+      images: [
+        {
+          src: "/2025-event-1.jpg",
+          alt: "TEDxSIST 2025 Event"
+        },
+        {
+          src: "/2025-event-2.jpg",
+          alt: "TEDxSIST 2025 Speaker"
+        }
+      ]
     },
     {
       title: "2023",

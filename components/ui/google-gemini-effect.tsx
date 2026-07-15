@@ -37,7 +37,7 @@ export const GoogleGeminiEffect: React.FC<GoogleGeminiEffectProps> = ({
   const ctaLabel = REGISTRATION_OPEN ? "Register" : "Coming Soon";
 
   const heroCaption = REGISTRATION_OPEN
-    ? "Registrations are Open! ✨"
+    ? "Registrations are Closed"
     : REGISTRATION_DATE
     ? `Registrations open on ${REGISTRATION_DATE} ✨`
     : "Registrations Coming Soon ✨";
